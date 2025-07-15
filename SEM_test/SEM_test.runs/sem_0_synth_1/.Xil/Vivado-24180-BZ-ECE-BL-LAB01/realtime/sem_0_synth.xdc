@@ -1,0 +1,6 @@
+set_property SRC_FILE_INFO {cfile:c:/Users/j48s677/Desktop/vivado_stuff/SEM/SEM/SEM_test/SEM_test.gen/sources_1/ip/sem_0/synth/sem_0_ooc.xdc rfile:../../../../../SEM_test.gen/sources_1/ip/sem_0/synth/sem_0_ooc.xdc id:1 order:EARLY scoped_inst:inst} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Users/j48s677/Desktop/vivado_stuff/SEM/SEM/SEM_test/SEM_test.runs/sem_0_synth_1/dont_touch.xdc rfile:../../../dont_touch.xdc id:2} [current_design]
+set_property src_info {type:SCOPED_XDC file:1 line:12 export:INPUT save:INPUT read:FILTER_OUT_OF_CONTEXT} [current_design]
+create_clock -period 125.000 -name clk [get_ports icap_clk]
+set_property src_info {type:XDC file:2 line:9 export:INPUT save:INPUT read:READ} [current_design]
+set_property KEEP_HIERARCHY SOFT [get_cells inst]

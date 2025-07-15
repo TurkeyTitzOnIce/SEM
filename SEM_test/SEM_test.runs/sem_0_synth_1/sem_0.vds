@@ -1,0 +1,228 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Tue Jul 15 14:05:25 2025
+# Process ID         : 24180
+# Current directory  : C:/Users/j48s677/Desktop/vivado_stuff/SEM/SEM/SEM_test/SEM_test.runs/sem_0_synth_1
+# Command line       : vivado.exe -log sem_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source sem_0.tcl
+# Log file           : C:/Users/j48s677/Desktop/vivado_stuff/SEM/SEM/SEM_test/SEM_test.runs/sem_0_synth_1/sem_0.vds
+# Journal file       : C:/Users/j48s677/Desktop/vivado_stuff/SEM/SEM/SEM_test/SEM_test.runs/sem_0_synth_1\vivado.jou
+# Running On         : BZ-ECE-BL-LAB01
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : Intel(R) Core(TM) i9-14900K
+# CPU Frequency      : 3187 MHz
+# CPU Physical cores : 24
+# CPU Logical cores  : 32
+# Host memory        : 66205 MB
+# Swap memory        : 66571 MB
+# Total Virtual      : 132777 MB
+# Available Virtual  : 117411 MB
+#-----------------------------------------------------------
+source sem_0.tcl -notrace
+Command: synth_design -top sem_0 -part xc7a35tcpg236-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 21004
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1183.645 ; gain = 493.305
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'sem_0' [c:/Users/j48s677/Desktop/vivado_stuff/SEM/SEM/SEM_test/SEM_test.gen/sources_1/ip/sem_0/synth/sem_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'RAMB18E1' [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:152178]
+INFO: [Synth 8-6155] done synthesizing module 'RAMB18E1' (0#1) [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:152178]
+INFO: [Synth 8-6157] synthesizing module 'RAMB18E1__parameterized0' [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:152178]
+INFO: [Synth 8-6155] done synthesizing module 'RAMB18E1__parameterized0' (0#1) [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:152178]
+INFO: [Synth 8-6157] synthesizing module 'FDP' [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:44158]
+INFO: [Synth 8-6155] done synthesizing module 'FDP' (0#1) [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:44158]
+INFO: [Synth 8-6157] synthesizing module 'INV' [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:81356]
+INFO: [Synth 8-6155] done synthesizing module 'INV' (0#1) [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:81356]
+INFO: [Synth 8-6157] synthesizing module 'FDR' [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:44218]
+INFO: [Synth 8-6155] done synthesizing module 'FDR' (0#1) [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:44218]
+INFO: [Synth 8-6157] synthesizing module 'LUT4' [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:89034]
+INFO: [Synth 8-6155] done synthesizing module 'LUT4' (0#1) [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:89034]
+INFO: [Synth 8-6157] synthesizing module 'FD' [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:43990]
+INFO: [Synth 8-6155] done synthesizing module 'FD' (0#1) [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:43990]
+INFO: [Synth 8-6157] synthesizing module 'FDE' [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:44132]
+INFO: [Synth 8-6155] done synthesizing module 'FDE' (0#1) [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:44132]
+INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized0' [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:89034]
+INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized0' (0#1) [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:89034]
+INFO: [Synth 8-6157] synthesizing module 'LUT3' [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:88992]
+INFO: [Synth 8-6155] done synthesizing module 'LUT3' (0#1) [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:88992]
+INFO: [Synth 8-6157] synthesizing module 'FDRE' [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:44231]
+INFO: [Synth 8-6155] done synthesizing module 'FDRE' (0#1) [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:44231]
+INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized1' [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:89034]
+INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized1' (0#1) [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:89034]
+INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized2' [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:89034]
+INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized2' (0#1) [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:89034]
+INFO: [Synth 8-6157] synthesizing module 'LUT3__parameterized0' [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:88992]
+INFO: [Synth 8-6155] done synthesizing module 'LUT3__parameterized0' (0#1) [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:88992]
+INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized3' [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:89034]
+INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized3' (0#1) [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:89034]
+INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized4' [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:89034]
+INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized4' (0#1) [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:89034]
+INFO: [Synth 8-6157] synthesizing module 'LUT2' [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:88954]
+INFO: [Synth 8-6155] done synthesizing module 'LUT2' (0#1) [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:88954]
+INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized5' [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:89034]
+INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized5' (0#1) [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:89034]
+INFO: [Synth 8-6157] synthesizing module 'LUT2__parameterized0' [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:88954]
+INFO: [Synth 8-6155] done synthesizing module 'LUT2__parameterized0' (0#1) [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:88954]
+INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized6' [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:89034]
+INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized6' (0#1) [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:89034]
+INFO: [Synth 8-6157] synthesizing module 'MUXCY' [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:95588]
+INFO: [Synth 8-6155] done synthesizing module 'MUXCY' (0#1) [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:95588]
+INFO: [Synth 8-6157] synthesizing module 'LUT3__parameterized1' [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:88992]
+INFO: [Synth 8-6155] done synthesizing module 'LUT3__parameterized1' (0#1) [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:88992]
+INFO: [Synth 8-6157] synthesizing module 'XORCY' [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:164593]
+INFO: [Synth 8-6155] done synthesizing module 'XORCY' (0#1) [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:164593]
+INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized7' [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:89034]
+INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized7' (0#1) [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:89034]
+INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized8' [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:89034]
+INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized8' (0#1) [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:89034]
+INFO: [Synth 8-6157] synthesizing module 'LUT3__parameterized2' [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:88992]
+INFO: [Synth 8-6155] done synthesizing module 'LUT3__parameterized2' (0#1) [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:88992]
+INFO: [Synth 8-6157] synthesizing module 'LUT2__parameterized1' [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:88954]
+INFO: [Synth 8-6155] done synthesizing module 'LUT2__parameterized1' (0#1) [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:88954]
+INFO: [Synth 8-6157] synthesizing module 'LUT2__parameterized2' [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:88954]
+INFO: [Synth 8-6155] done synthesizing module 'LUT2__parameterized2' (0#1) [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:88954]
+INFO: [Synth 8-6157] synthesizing module 'LUT3__parameterized3' [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:88992]
+INFO: [Synth 8-6155] done synthesizing module 'LUT3__parameterized3' (0#1) [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:88992]
+INFO: [Synth 8-6157] synthesizing module 'FDRSE' [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:44283]
+INFO: [Synth 8-6155] done synthesizing module 'FDRSE' (0#1) [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:44283]
+INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized9' [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:89034]
+INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized9' (0#1) [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:89034]
+INFO: [Synth 8-6157] synthesizing module 'RAM16X1D' [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:147195]
+INFO: [Synth 8-6155] done synthesizing module 'RAM16X1D' (0#1) [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:147195]
+INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized10' [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:89034]
+INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized10' (0#1) [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:89034]
+INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized11' [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:89034]
+INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized11' (0#1) [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:89034]
+INFO: [Synth 8-6157] synthesizing module 'RAM64X1S' [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:147934]
+INFO: [Synth 8-6155] done synthesizing module 'RAM64X1S' (0#1) [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:147934]
+INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized12' [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:89034]
+INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized12' (0#1) [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:89034]
+INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized13' [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:89034]
+INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized13' (0#1) [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:89034]
+INFO: [Synth 8-6157] synthesizing module 'MUXF5' [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:95625]
+INFO: [Synth 8-6155] done synthesizing module 'MUXF5' (0#1) [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:95625]
+INFO: [Synth 8-6157] synthesizing module 'LUT3__parameterized4' [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:88992]
+INFO: [Synth 8-6155] done synthesizing module 'LUT3__parameterized4' (0#1) [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:88992]
+INFO: [Synth 8-6157] synthesizing module 'LUT3__parameterized5' [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:88992]
+INFO: [Synth 8-6155] done synthesizing module 'LUT3__parameterized5' (0#1) [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:88992]
+INFO: [Synth 8-6157] synthesizing module 'LUT3__parameterized6' [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:88992]
+INFO: [Synth 8-6155] done synthesizing module 'LUT3__parameterized6' (0#1) [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:88992]
+INFO: [Synth 8-6157] synthesizing module 'LUT1' [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:88920]
+INFO: [Synth 8-6155] done synthesizing module 'LUT1' (0#1) [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:88920]
+INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized14' [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:89034]
+INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized14' (0#1) [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:89034]
+INFO: [Synth 8-6157] synthesizing module 'LUT3__parameterized7' [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:88992]
+INFO: [Synth 8-6155] done synthesizing module 'LUT3__parameterized7' (0#1) [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:88992]
+INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized15' [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:89034]
+INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized15' (0#1) [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:89034]
+INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized16' [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:89034]
+INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized16' (0#1) [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:89034]
+INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized17' [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:89034]
+INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized17' (0#1) [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:89034]
+INFO: [Synth 8-6157] synthesizing module 'RAM32X1S' [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:147619]
+INFO: [Synth 8-6155] done synthesizing module 'RAM32X1S' (0#1) [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:147619]
+INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized18' [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:89034]
+INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized18' (0#1) [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:89034]
+INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized19' [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:89034]
+INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized19' (0#1) [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:89034]
+INFO: [Synth 8-6157] synthesizing module 'RAMB18E1__parameterized1' [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:152178]
+INFO: [Synth 8-6155] done synthesizing module 'RAMB18E1__parameterized1' (0#1) [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:152178]
+INFO: [Synth 8-6155] done synthesizing module 'sem_0' (0#1) [c:/Users/j48s677/Desktop/vivado_stuff/SEM/SEM/SEM_test/SEM_test.gen/sources_1/ip/sem_0/synth/sem_0.v:53]
+WARNING: [Synth 8-7129] Port icap_clk in module sem_v4_1_16_x7_sem_cbuffer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sync_init in module sem_v4_1_16_x7_sem_cbuffer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_window in module sem_v4_1_16_x7_sem_cbuffer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_values[31] in module sem_v4_1_16_x7_sem_cbuffer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_values[30] in module sem_v4_1_16_x7_sem_cbuffer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_values[29] in module sem_v4_1_16_x7_sem_cbuffer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_values[28] in module sem_v4_1_16_x7_sem_cbuffer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_values[27] in module sem_v4_1_16_x7_sem_cbuffer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_values[26] in module sem_v4_1_16_x7_sem_cbuffer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_values[25] in module sem_v4_1_16_x7_sem_cbuffer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_values[24] in module sem_v4_1_16_x7_sem_cbuffer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_values[23] in module sem_v4_1_16_x7_sem_cbuffer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_values[22] in module sem_v4_1_16_x7_sem_cbuffer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_values[21] in module sem_v4_1_16_x7_sem_cbuffer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_values[20] in module sem_v4_1_16_x7_sem_cbuffer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_values[19] in module sem_v4_1_16_x7_sem_cbuffer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_values[18] in module sem_v4_1_16_x7_sem_cbuffer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_values[17] in module sem_v4_1_16_x7_sem_cbuffer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_values[16] in module sem_v4_1_16_x7_sem_cbuffer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_values[15] in module sem_v4_1_16_x7_sem_cbuffer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_values[14] in module sem_v4_1_16_x7_sem_cbuffer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_values[13] in module sem_v4_1_16_x7_sem_cbuffer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_values[12] in module sem_v4_1_16_x7_sem_cbuffer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_values[11] in module sem_v4_1_16_x7_sem_cbuffer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_values[10] in module sem_v4_1_16_x7_sem_cbuffer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_values[9] in module sem_v4_1_16_x7_sem_cbuffer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_values[8] in module sem_v4_1_16_x7_sem_cbuffer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_values[7] in module sem_v4_1_16_x7_sem_cbuffer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_values[6] in module sem_v4_1_16_x7_sem_cbuffer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_values[5] in module sem_v4_1_16_x7_sem_cbuffer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_values[4] in module sem_v4_1_16_x7_sem_cbuffer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_values[3] in module sem_v4_1_16_x7_sem_cbuffer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_values[2] in module sem_v4_1_16_x7_sem_cbuffer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_values[1] in module sem_v4_1_16_x7_sem_cbuffer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_values[0] in module sem_v4_1_16_x7_sem_cbuffer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port port_id[1] in module sem_v4_1_16_x7_sem_cbuffer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port port_id[0] in module sem_v4_1_16_x7_sem_cbuffer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cselect in module sem_v4_1_16_x7_sem_cbuffer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port write_strobe in module sem_v4_1_16_x7_sem_cbuffer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port read_strobe in module sem_v4_1_16_x7_sem_cbuffer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_port[7] in module sem_v4_1_16_x7_sem_cbuffer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_port[6] in module sem_v4_1_16_x7_sem_cbuffer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_port[5] in module sem_v4_1_16_x7_sem_cbuffer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_port[4] in module sem_v4_1_16_x7_sem_cbuffer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_port[3] in module sem_v4_1_16_x7_sem_cbuffer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_port[2] in module sem_v4_1_16_x7_sem_cbuffer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_port[1] in module sem_v4_1_16_x7_sem_cbuffer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_port[0] in module sem_v4_1_16_x7_sem_cbuffer is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1300.844 ; gain = 610.504
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1300.844 ; gain = 610.504
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1300.844 ; gain = 610.504
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1300.844 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 190 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/j48s677/Desktop/vivado_stuff/SEM/SEM/SEM_test/SEM_test.gen/sources_1/ip/sem_0/synth/sem_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Users/j48s677/Desktop/vivado_stuff/SEM/SEM/SEM_test/SEM_test.gen/sources_1/ip/sem_0/synth/sem_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [C:/Users/j48s677/Desktop/vivado_stuff/SEM/SEM/SEM_test/SEM_test.runs/sem_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/j48s677/Desktop/vivado_stuff/SEM/SEM/SEM_test/SEM_test.runs/sem_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1374.090 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 111 instances were transformed.
+  FD => FDRE: 24 instances
+  FDE => FDRE: 2 instances
+  FDP => FDPE: 5 instances
+  FDR => FDRE: 30 instances
+  FDRSE => FDRSE (FDRE, LUT4, VCC): 10 instances
+  INV => LUT1: 5 instances
+  MUXF5 => LUT3: 9 instances
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 8 instances
+  RAM32X1S => RAM32X1S (RAMS32): 10 instances
+  RAM64X1S => RAM64X1S (RAMS64E): 8 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 1376.094 ; gain = 2.004
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
