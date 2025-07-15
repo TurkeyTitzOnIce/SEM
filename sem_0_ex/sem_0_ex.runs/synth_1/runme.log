@@ -1,0 +1,381 @@
+
+*** Running vivado
+    with args -log sem_0_sem_example.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source sem_0_sem_example.tcl
+
+
+
+****** Vivado v2025.1 (64-bit)
+  **** SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+  **** IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+  **** SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+  **** Start of session at: Tue Jul 15 14:22:21 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source sem_0_sem_example.tcl -notrace
+Command: synth_design -top sem_0_sem_example -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 22000
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1184.062 ; gain = 492.500
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'sem_0_sem_example' [c:/Users/j48s677/Desktop/vivado_stuff/SEM/SEM/sem_0_ex/imports/sem_0_sem_example.v:185]
+INFO: [Synth 8-6157] synthesizing module 'IBUF' [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:76868]
+INFO: [Synth 8-6155] done synthesizing module 'IBUF' (0#1) [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:76868]
+INFO: [Synth 8-6157] synthesizing module 'BUFGCE' [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:2688]
+INFO: [Synth 8-6155] done synthesizing module 'BUFGCE' (0#1) [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:2688]
+INFO: [Synth 8-6157] synthesizing module 'sem_0' [c:/Users/j48s677/Desktop/vivado_stuff/SEM/SEM/sem_0_ex/sem_0_ex.runs/synth_1/.Xil/Vivado-2480-BZ-ECE-BL-LAB01/realtime/sem_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'sem_0' (0#1) [c:/Users/j48s677/Desktop/vivado_stuff/SEM/SEM/sem_0_ex/sem_0_ex.runs/synth_1/.Xil/Vivado-2480-BZ-ECE-BL-LAB01/realtime/sem_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'sem_0_sem_cfg' [c:/Users/j48s677/Desktop/vivado_stuff/SEM/SEM/sem_0_ex/imports/sem_0_sem_cfg.v:150]
+INFO: [Synth 8-6157] synthesizing module 'FRAME_ECCE2' [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:45114]
+	Parameter FARSRC bound to: EFAR - type: string 
+	Parameter FRAME_RBT_IN_FILENAME bound to: NONE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'FRAME_ECCE2' (0#1) [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:45114]
+INFO: [Synth 8-6157] synthesizing module 'ICAPE2' [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:78705]
+	Parameter DEVICE_ID bound to: -1 - type: integer 
+	Parameter ICAP_WIDTH bound to: X32 - type: string 
+	Parameter SIM_CFG_FILE_NAME bound to: NONE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'ICAPE2' (0#1) [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:78705]
+INFO: [Synth 8-6155] done synthesizing module 'sem_0_sem_cfg' (0#1) [c:/Users/j48s677/Desktop/vivado_stuff/SEM/SEM/sem_0_ex/imports/sem_0_sem_cfg.v:150]
+INFO: [Synth 8-6157] synthesizing module 'sem_0_sem_mon' [c:/Users/j48s677/Desktop/vivado_stuff/SEM/SEM/sem_0_ex/imports/sem_0_sem_mon.v:151]
+INFO: [Synth 8-6157] synthesizing module 'sem_0_sem_mon_fifo' [c:/Users/j48s677/Desktop/vivado_stuff/SEM/SEM/sem_0_ex/imports/sem_0_sem_mon_fifo.v:122]
+INFO: [Synth 8-6157] synthesizing module 'SRLC32E' [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:158762]
+INFO: [Synth 8-6155] done synthesizing module 'SRLC32E' (0#1) [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:158762]
+INFO: [Synth 8-6155] done synthesizing module 'sem_0_sem_mon_fifo' (0#1) [c:/Users/j48s677/Desktop/vivado_stuff/SEM/SEM/sem_0_ex/imports/sem_0_sem_mon_fifo.v:122]
+INFO: [Synth 8-6157] synthesizing module 'sem_0_sem_mon_piso' [c:/Users/j48s677/Desktop/vivado_stuff/SEM/SEM/sem_0_ex/imports/sem_0_sem_mon_piso.v:120]
+INFO: [Synth 8-6157] synthesizing module 'FD' [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:43990]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-6155] done synthesizing module 'FD' (0#1) [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:43990]
+INFO: [Synth 8-6155] done synthesizing module 'sem_0_sem_mon_piso' (0#1) [c:/Users/j48s677/Desktop/vivado_stuff/SEM/SEM/sem_0_ex/imports/sem_0_sem_mon_piso.v:120]
+INFO: [Synth 8-6157] synthesizing module 'sem_0_sem_mon_sipo' [c:/Users/j48s677/Desktop/vivado_stuff/SEM/SEM/sem_0_ex/imports/sem_0_sem_mon_sipo.v:115]
+INFO: [Synth 8-6157] synthesizing module 'FD__parameterized0' [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:43990]
+INFO: [Synth 8-6155] done synthesizing module 'FD__parameterized0' (0#1) [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:43990]
+INFO: [Synth 8-6155] done synthesizing module 'sem_0_sem_mon_sipo' (0#1) [c:/Users/j48s677/Desktop/vivado_stuff/SEM/SEM/sem_0_ex/imports/sem_0_sem_mon_sipo.v:115]
+INFO: [Synth 8-6155] done synthesizing module 'sem_0_sem_mon' (0#1) [c:/Users/j48s677/Desktop/vivado_stuff/SEM/SEM/sem_0_ex/imports/sem_0_sem_mon.v:151]
+INFO: [Synth 8-6157] synthesizing module 'sem_0_sem_ext' [c:/Users/j48s677/Desktop/vivado_stuff/SEM/SEM/sem_0_ex/imports/sem_0_sem_ext.v:161]
+INFO: [Synth 8-6157] synthesizing module 'sem_0_sem_ext_byte' [c:/Users/j48s677/Desktop/vivado_stuff/SEM/SEM/sem_0_ex/imports/sem_0_sem_ext_byte.v:146]
+INFO: [Synth 8-6157] synthesizing module 'FDR' [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:44218]
+INFO: [Synth 8-6155] done synthesizing module 'FDR' (0#1) [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:44218]
+INFO: [Synth 8-6157] synthesizing module 'FDRE' [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:44231]
+INFO: [Synth 8-6155] done synthesizing module 'FDRE' (0#1) [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:44231]
+INFO: [Synth 8-6155] done synthesizing module 'sem_0_sem_ext_byte' (0#1) [c:/Users/j48s677/Desktop/vivado_stuff/SEM/SEM/sem_0_ex/imports/sem_0_sem_ext_byte.v:146]
+INFO: [Synth 8-6157] synthesizing module 'FDS' [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:44354]
+INFO: [Synth 8-6155] done synthesizing module 'FDS' (0#1) [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:44354]
+INFO: [Synth 8-6155] done synthesizing module 'sem_0_sem_ext' (0#1) [c:/Users/j48s677/Desktop/vivado_stuff/SEM/SEM/sem_0_ex/imports/sem_0_sem_ext.v:161]
+INFO: [Synth 8-6155] done synthesizing module 'sem_0_sem_example' (0#1) [c:/Users/j48s677/Desktop/vivado_stuff/SEM/SEM/sem_0_ex/imports/sem_0_sem_example.v:185]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1296.199 ; gain = 604.637
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1296.199 ; gain = 604.637
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1296.199 ; gain = 604.637
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1296.199 ; gain = 0.000
+WARNING: [Netlist 29-345] The value of SIM_DEVICE on instance 'example_bufg' of type 'BUFGCE' is 'ULTRASCALE'; it is being changed to match the current FPGA architecture, '7SERIES'. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist. 
+INFO: [Netlist 29-17] Analyzing 14 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/j48s677/Desktop/vivado_stuff/SEM/SEM/sem_0_ex/sem_0_ex.gen/sources_1/ip/sem_0/sem_0/sem_0_in_context.xdc] for cell 'example_controller'
+Finished Parsing XDC File [c:/Users/j48s677/Desktop/vivado_stuff/SEM/SEM/sem_0_ex/sem_0_ex.gen/sources_1/ip/sem_0/sem_0/sem_0_in_context.xdc] for cell 'example_controller'
+Parsing XDC File [c:/Users/j48s677/Desktop/vivado_stuff/SEM/SEM/sem_0_ex/imports/sem_0_sem_example.xdc]
+WARNING: [Vivado 12-25128] Pblock ranges must include all sites of a tile. The ranges of pblock SEM_CONTROLLER have been updated to align to tile boundaries. [c:/Users/j48s677/Desktop/vivado_stuff/SEM/SEM/sem_0_ex/imports/sem_0_sem_example.xdc:275]
+INFO: [Vivado 12-3520] Assignment of 'example_mon_piso, example_mon_sipo, example_mon_fifo_rx, en_16_x_counter0_i, en_16_x_baud_i, GND, VCC, monitor_rxempty_i, example_mon_fifo_tx, en_16_x_counter_reg[8], en_16_x_counter_reg[7], en_16_x_counter_reg[11], en_16_x_counter_reg[4], en_16_x_counter_reg[6], en_16_x_counter_reg[1], en_16_x_counter_reg[2], en_16_x_counter_reg[3], en_16_x_counter_reg[0], en_16_x_counter_reg[10], en_16_x_counter_reg[5], and en_16_x_counter_reg[9]' to a pblock 'SEM_CONTROLLER' means that all children of 'example_mon' are in the pblock. Changing the pblock assignment to 'example_mon'. [c:/Users/j48s677/Desktop/vivado_stuff/SEM/SEM/sem_0_ex/imports/sem_0_sem_example.xdc:277]
+WARNING: [Constraints 18-4570] A register has an IOB value of TRUE which potentially conflicts with its Pblock assignment. The IOB property takes priority over the Pblock assignment. The register is example_ext/example_ext_byte/ext_c_ofd [c:/Users/j48s677/Desktop/vivado_stuff/SEM/SEM/sem_0_ex/imports/sem_0_sem_example.xdc:278]
+WARNING: [Constraints 18-4570] A register has an IOB value of TRUE which potentially conflicts with its Pblock assignment. The IOB property takes priority over the Pblock assignment. The register is example_ext/example_ext_byte/ext_d_ofd [c:/Users/j48s677/Desktop/vivado_stuff/SEM/SEM/sem_0_ex/imports/sem_0_sem_example.xdc:278]
+WARNING: [Constraints 18-4570] A register has an IOB value of TRUE which potentially conflicts with its Pblock assignment. The IOB property takes priority over the Pblock assignment. The register is example_ext/example_ext_byte/ext_q_ifd [c:/Users/j48s677/Desktop/vivado_stuff/SEM/SEM/sem_0_ex/imports/sem_0_sem_example.xdc:278]
+WARNING: [Constraints 18-4570] A register has an IOB value of TRUE which potentially conflicts with its Pblock assignment. The IOB property takes priority over the Pblock assignment. The register is example_ext/ext_s_ofd [c:/Users/j48s677/Desktop/vivado_stuff/SEM/SEM/sem_0_ex/imports/sem_0_sem_example.xdc:278]
+INFO: [Vivado 12-3520] Assignment of 'sync_init_a, sync_init_b, ext_s_ofd, sync_init_d, sync_init_e, VCC_1, sync_init_c, example_ext_byte, ns_state0_i, ns_dat_len0_i, ns_state_i, ns_dat_len0_i__0, ns_state_i__1, ns_dat_len_i, ns_dat_len_i__0, ns_state0_i__1, ns_state0_i__0, ns_state_i__0, ns_state0_i__8, ns_state0_i__5, ns_state0_i__7, ns_state0_i__2, ns_state0_i__3, ns_state0_i__6, ns_state_i__3, ns_state0_i__9, ns_state0_i__4, ns_state_i__2, ns_state0_i__12, ns_state0_i__11, ns_state0_i__13, ns_state_i__4, ns_state0_i__14, ns_state0_i__10, ns_state0_i__15, fetch_rxempty_i, tx_mbox_src_full_i, ns_state_i__5, ns_state_i__6, ns_txprocessed_i, ns_start_i, rx_mbox_dst_irq0_i, ns_rxprocessed_i__0, ns_rxprocessed_i, rx_mbox_dst_full_i, ns_start0_i, ns_sel_n0_i, ns_sel_n0_i__0, GND, ns_sel_n_i, ns_sel_n_i__0, tx_i, VCC, dat_len_reg[1], dat_len_reg[2], dat_len_reg[3], dat_len_reg[4], tx_mbox_src_write_reg, tx_mbox_src_data_reg[0], tx_mbox_src_data_reg[1], tx_mbox_dst_full_reg, tx_mbox_dst_read_reg, tx_mbox_dst_data_reg[0], tx_mbox_src_data_reg[2], rx_mbox_dst_data_reg[5], state_reg[1], tx_mbox_src_full_reg, rx_mbox_dst_data_reg[4], rx_mbox_src_data_reg[3], rx_mbox_dst_data_reg[6], tx_mbox_dst_data_reg[5], rx_mbox_src_data_reg[6], rx_mbox_dst_data_reg[7], state_reg[4], rx_mbox_src_data_reg[2], rx_mbox_src_data_reg[0], tx_mbox_dst_data_reg[3], state_reg[0], tx_mbox_dst_data_reg[6], rx_mbox_src_data_reg[4], tx_mbox_src_data_reg[5], dat_len_reg[6], rx_mbox_dst_data_reg[0], rx_mbox_dst_read_reg, rx_mbox_src_irq_reg, rx_mbox_src_data_reg[7], rx_mbox_dst_irq_reg, reset_reg, start_reg, tx_mbox_src_data_reg[4], tx_mbox_dst_data_reg[7], tx_mbox_dst_data_reg[2], rx_mbox_src_write_reg, rx_mbox_dst_full_reg, rxvd_reg, rx_mbox_dst_data_reg[3], rx_mbox_src_data_reg[1], dat_len_reg[8], rx_mbox_src_data_reg[5], sel_n_reg, tx_mbox_dst_data_reg[4], state_reg[2], state_reg[3], rx_mbox_dst_data_reg[2], tx_mbox_dst_data_reg[1], rx_mbox_src_read_reg, dat_len_reg[5], tx_mbox_src_data_reg[3], tx_mbox_src_data_reg[6], tx_mbox_src_data_reg[7], dat_len_reg[0], dat_len_reg[7], and rx_mbox_dst_data_reg[1]' to a pblock 'SEM_CONTROLLER' means that all children of 'example_ext' are in the pblock. Changing the pblock assignment to 'example_ext'. [c:/Users/j48s677/Desktop/vivado_stuff/SEM/SEM/sem_0_ex/imports/sem_0_sem_example.xdc:278]
+Finished Parsing XDC File [c:/Users/j48s677/Desktop/vivado_stuff/SEM/SEM/sem_0_ex/imports/sem_0_sem_example.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/j48s677/Desktop/vivado_stuff/SEM/SEM/sem_0_ex/imports/sem_0_sem_example.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/sem_0_sem_example_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/sem_0_sem_example_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Sourcing Tcl File [c:/Users/j48s677/Desktop/vivado_stuff/SEM/SEM/sem_0_ex/imports/makedata.tcl]
+Finished Sourcing Tcl File [c:/Users/j48s677/Desktop/vivado_stuff/SEM/SEM/sem_0_ex/imports/makedata.tcl]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/j48s677/Desktop/vivado_stuff/SEM/SEM/sem_0_ex/imports/makedata.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/sem_0_sem_example_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/sem_0_sem_example_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [c:/Users/j48s677/Desktop/vivado_stuff/SEM/SEM/sem_0_ex/sem_0_ex.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [c:/Users/j48s677/Desktop/vivado_stuff/SEM/SEM/sem_0_ex/sem_0_ex.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1375.914 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 14 instances were transformed.
+  BUFGCE => BUFGCTRL: 1 instance 
+  FD => FDRE: 5 instances
+  FDR => FDRE: 2 instances
+  FDS => FDSE: 6 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1375.914 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1375.914 ; gain = 684.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1375.914 ; gain = 684.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1375.914 ; gain = 684.352
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'sem_0_sem_ext_byte'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'sem_0_sem_ext'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                S_RST_CL |                00000000000000001 |                            00000
+                S_TX7_CL |                00000000000000010 |                            10000
+                S_TX7_CH |                00000000000000100 |                            10001
+                S_TX6_CL |                00000000000001000 |                            10010
+                S_TX6_CH |                00000000000010000 |                            10011
+                S_TX5_CL |                00000000000100000 |                            10100
+                S_TX5_CH |                00000000001000000 |                            10101
+                S_TX4_CL |                00000000010000000 |                            10110
+                S_TX4_CH |                00000000100000000 |                            10111
+                S_TX3_CL |                00000001000000000 |                            11000
+                S_TX3_CH |                00000010000000000 |                            11001
+                S_TX2_CL |                00000100000000000 |                            11010
+                S_TX2_CH |                00001000000000000 |                            11011
+                S_TX1_CL |                00010000000000000 |                            11100
+                S_TX1_CH |                00100000000000000 |                            11101
+                S_TX0_CL |                01000000000000000 |                            11110
+                S_TX0_CH |                10000000000000000 |                            11111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'sem_0_sem_ext_byte'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                S_ARBIDL |                    0000000000001 |                            00000
+                S_MOVEFR |                    0000000000010 |                            01010
+                S_WAITA2 |                    0000000000100 |                            01100
+                S_MOVEA2 |                    0000000001000 |                            01101
+                S_WAITA1 |                    0000000010000 |                            01110
+                S_MOVEA1 |                    0000000100000 |                            01111
+                S_WAITA0 |                    0000001000000 |                            10000
+                S_MOVEA0 |                    0000010000000 |                            10001
+                S_WAITL1 |                    0000100000000 |                            10010
+                S_MOVEDM |                    0001000000000 |                            10011
+                S_WAITL0 |                    0010000000000 |                            10100
+                S_MOVERX |                    0100000000000 |                            10101
+                S_PICKUP |                    1000000000000 |                            10110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'sem_0_sem_ext'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1375.914 ; gain = 684.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    9 Bit       Adders := 1     
+	   3 Input    9 Bit       Adders := 1     
+	   2 Input    6 Bit       Adders := 2     
+	   2 Input    3 Bit       Adders := 1     
++---Registers : 
+	              152 Bit    Registers := 1     
+	              151 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 4     
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 23    
++---Muxes : 
+	  17 Input   17 Bit        Muxes := 1     
+	   2 Input   17 Bit        Muxes := 2     
+	  13 Input   13 Bit        Muxes := 1     
+	   2 Input   13 Bit        Muxes := 14    
+	  13 Input    9 Bit        Muxes := 2     
+	   4 Input    8 Bit        Muxes := 1     
+	   3 Input    6 Bit        Muxes := 2     
+	  17 Input    5 Bit        Muxes := 3     
+	   2 Input    1 Bit        Muxes := 5     
+	  13 Input    1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1375.914 ; gain = 684.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1501.129 ; gain = 809.566
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1531.738 ; gain = 840.176
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1532.301 ; gain = 840.738
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1745.988 ; gain = 1054.426
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1745.988 ; gain = 1054.426
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1745.988 ; gain = 1054.426
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1745.988 ; gain = 1054.426
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1745.988 ; gain = 1054.426
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1745.988 ; gain = 1054.426
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------------+---------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name       | RTL Name                                          | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------------+---------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|sem_0_sem_example | example_mon/example_mon_piso/hot_delay_reg[15]    | 16     | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|sem_0_sem_example | example_mon/example_mon_sipo/delay_line_reg[149]  | 22     | 1     | NO           | NO                 | YES               | 0      | 1       | 
+|sem_0_sem_example | example_mon/example_mon_sipo/delay_line_reg[127]  | 16     | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|sem_0_sem_example | example_mon/example_mon_sipo/valid_delay_reg[151] | 152    | 1     | NO           | NO                 | YES               | 0      | 5       | 
+|sem_0_sem_example | example_ext/reset_reg                             | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
++------------------+---------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |sem_0         |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+------------+------+
+|      |Cell        |Count |
++------+------------+------+
+|1     |sem         |     1|
+|2     |BUFGCE      |     1|
+|3     |CARRY4      |     6|
+|4     |FRAME_ECCE2 |     1|
+|5     |ICAPE2      |     1|
+|6     |LUT1        |     3|
+|7     |LUT2        |     7|
+|8     |LUT3        |    10|
+|9     |LUT4        |    29|
+|10    |LUT5        |    26|
+|11    |LUT6        |    31|
+|12    |SRL16E      |    10|
+|13    |SRLC32E     |    22|
+|14    |FD          |     5|
+|15    |FDR         |     2|
+|16    |FDRE        |   135|
+|17    |FDS         |     6|
+|18    |FDSE        |     3|
+|19    |IBUF        |    44|
+|20    |OBUF        |    12|
++------+------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1745.988 ; gain = 1054.426
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 1745.988 ; gain = 974.711
+Synthesis Optimization Complete : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1745.988 ; gain = 1054.426
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1745.988 ; gain = 0.000
+WARNING: [Netlist 29-345] The value of SIM_DEVICE on instance 'example_bufg' of type 'BUFGCE' is 'ULTRASCALE'; it is being changed to match the current FPGA architecture, '7SERIES'. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist. 
+INFO: [Netlist 29-17] Analyzing 20 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1755.348 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 14 instances were transformed.
+  BUFGCE => BUFGCTRL: 1 instance 
+  FD => FDRE: 5 instances
+  FDR => FDRE: 2 instances
+  FDS => FDSE: 6 instances
+
+Synth Design complete | Checksum: 16c038a4
+INFO: [Common 17-83] Releasing license: Synthesis
+62 Infos, 8 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1755.348 ; gain = 1250.742
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1755.348 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'c:/Users/j48s677/Desktop/vivado_stuff/SEM/SEM/sem_0_ex/sem_0_ex.runs/synth_1/sem_0_sem_example.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file sem_0_sem_example_utilization_synth.rpt -pb sem_0_sem_example_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Jul 15 14:22:44 2025...

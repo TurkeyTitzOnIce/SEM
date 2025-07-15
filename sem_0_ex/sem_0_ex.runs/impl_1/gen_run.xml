@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1752610974">
+  <File Type="ROUTE-BLACKBOX-DCP" Name="sem_0_sem_example_routed_bb.dcp"/>
+  <File Type="OPT-UTIL" Name="sem_0_sem_example_utilization_opted.rpt"/>
+  <File Type="ROUTE-PWR" Name="sem_0_sem_example_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="sem_0_sem_example.tcl"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="sem_0_sem_example_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="sem_0_sem_example_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="sem_0_sem_example_power_summary_routed.pb"/>
+  <File Type="OPT-RQA-PB" Name="sem_0_sem_example_rqa_opted.pb"/>
+  <File Type="REPORTS-TCL" Name="sem_0_sem_example_reports.tcl"/>
+  <File Type="ROUTE-TIMING-PB" Name="sem_0_sem_example_timing_summary_routed.pb"/>
+  <File Type="OPT-UTIL-PB" Name="sem_0_sem_example_utilization_opted.pb"/>
+  <File Type="OPT-DCP" Name="sem_0_sem_example_opt.dcp"/>
+  <File Type="OPT-DRC" Name="sem_0_sem_example_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="sem_0_sem_example.hwdef"/>
+  <File Type="OPT-TIMING" Name="sem_0_sem_example_timing_summary_opted.rpt"/>
+  <File Type="PWROPT-DCP" Name="sem_0_sem_example_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="sem_0_sem_example_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="sem_0_sem_example_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="sem_0_sem_example_placed.dcp"/>
+  <File Type="PLACE-IO" Name="sem_0_sem_example_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="sem_0_sem_example_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="sem_0_sem_example_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="sem_0_sem_example_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="sem_0_sem_example_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="sem_0_sem_example_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="sem_0_sem_example_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BIN" Name="sem_0_sem_example.bin"/>
+  <File Type="PLACE-TIMING" Name="sem_0_sem_example_timing_summary_placed.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="sem_0_sem_example_power_routed.rpx"/>
+  <File Type="PLACE-RQA-PB" Name="sem_0_sem_example_rqa_placed.pb"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="sem_0_sem_example_postplace_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="sem_0_sem_example_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="sem_0_sem_example_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="sem_0_sem_example_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-TIMING" Name="sem_0_sem_example_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-UTIL" Name="sem_0_sem_example_utilization_routed.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="sem_0_sem_example_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="sem_0_sem_example_routed.dcp"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="sem_0_sem_example_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-UTIL-PB" Name="sem_0_sem_example_utilization_routed.pb"/>
+  <File Type="ROUTE-DRC" Name="sem_0_sem_example_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="sem_0_sem_example_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="sem_0_sem_example_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="sem_0_sem_example_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="sem_0_sem_example_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="sem_0_sem_example_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-RQS-PB" Name="sem_0_sem_example_rqs_routed.pb"/>
+  <File Type="ROUTE-STATUS" Name="sem_0_sem_example_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="sem_0_sem_example_route_status.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="sem_0_sem_example_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="sem_0_sem_example_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="sem_0_sem_example_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="sem_0_sem_example_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="sem_0_sem_example_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="sem_0_sem_example_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="sem_0_sem_example_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="sem_0_sem_example_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="sem_0_sem_example_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="sem_0_sem_example_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="sem_0_sem_example_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="sem_0_sem_example_bus_skew_postroute_physopted.rpt"/>
+  <File Type="BG-BIT" Name="sem_0_sem_example.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="sem_0_sem_example_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="sem_0_sem_example_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-MSK" Name="sem_0_sem_example.msk"/>
+  <File Type="BITSTR-RBT" Name="sem_0_sem_example.rbt"/>
+  <File Type="BITSTR-NKY" Name="sem_0_sem_example.nky"/>
+  <File Type="BITSTR-BMM" Name="sem_0_sem_example_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="sem_0_sem_example.mmi"/>
+  <File Type="PDI-FILE" Name="sem_0_sem_example.pdi"/>
+  <File Type="BOOT-PDI-FILE" Name="sem_0_sem_example_boot.pdi"/>
+  <File Type="PL-PDI-FILE" Name="sem_0_sem_example_pld.pdi"/>
+  <File Type="RCFI_FILE" Name="sem_0_sem_example.rcfi"/>
+  <File Type="CFI_FILE" Name="sem_0_sem_example.cfi"/>
+  <File Type="RNPI_FILE" Name="sem_0_sem_example.rnpi"/>
+  <File Type="RCDO-FILE" Name="sem_0_sem_example.rcdo"/>
+  <File Type="MARKER-RNPI-FILE" Name="sem_0_sem_example_markers.rnpi"/>
+  <File Type="MARKER-RCDO-FILE" Name="sem_0_sem_example_markers.rcdo"/>
+  <File Type="BOOT_RNPI_FILE" Name="sem_0_sem_example_boot.rnpi"/>
+  <File Type="BOOT_MARKER_RNPI_FILE" Name="sem_0_sem_example_boot_markers.rnpi"/>
+  <File Type="PL_RNPI_FILE" Name="sem_0_sem_example_pld.rnpi"/>
+  <File Type="PL_MARKER_RNPI_FILE" Name="sem_0_sem_example_pld_markers.rnpi"/>
+  <File Type="PL_MASK_RNPI_FILE" Name="sem_0_sem_example_pld_mask.rnpi"/>
+  <File Type="PL_SHUTDOWN_RNPI_FILE" Name="sem_0_sem_example_pld_shutdown.rnpi"/>
+  <File Type="PL_UNMASK_RNPI_FILE" Name="sem_0_sem_example_pld_unmask.rnpi"/>
+  <File Type="PL-RCDO-FILE" Name="sem_0_sem_example_pld.rcdo"/>
+  <File Type="PL-CLEAR-RCDO-FILE" Name="sem_0_sem_example_pld_clear.rcdo"/>
+  <File Type="PL_MARKER_RCDO_FILE" Name="sem_0_sem_example_pld_markers.rcdo"/>
+  <File Type="PL_MASK_RCDO_FILE" Name="sem_0_sem_example_pld_mask.rcdo"/>
+  <File Type="PL_UNMASK_MARKER_RCDO_FILE" Name="sem_0_sem_example_pld_unmask_markers.rcdo"/>
+  <File Type="PL_UNMASK_RCDO_FILE" Name="sem_0_sem_example_pld_unmask.rcdo"/>
+  <File Type="NPI_FILE" Name="sem_0_sem_example.npi"/>
+  <File Type="RBD_FILE" Name="sem_0_sem_example.rbd"/>
+  <File Type="MMI-FILE" Name="sem_0_sem_example.mmi"/>
+  <File Type="BIF-FILE" Name="sem_0_sem_example.bif"/>
+  <File Type="BOOT-BIF-FILE" Name="sem_0_sem_example_boot.bif"/>
+  <File Type="PL-BIF-FILE" Name="sem_0_sem_example_pld.bif"/>
+  <File Type="LTX-FILE" Name="sem_0_sem_example.ltx"/>
+  <File Type="BOOT-LTX-FILE" Name="sem_0_sem_example_boot.ltx"/>
+  <File Type="PL-LTX-FILE" Name="sem_0_sem_example_pld.ltx"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="sem_0_sem_example.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="sem_0_sem_example.sysdef"/>
+  <File Type="BG-BGN" Name="sem_0_sem_example.bgn"/>
+  <File Type="BG-DRC" Name="sem_0_sem_example.drc"/>
+  <File Type="RDI-RDI" Name="sem_0_sem_example.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="ROUTE-RQS" Name="sem_0_sem_example_routed.rqs"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="sem_0_sem_example_postroute_physopted.rqs"/>
+  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/ip/sem_0/sem_0.xci">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../SEM_test/SEM_test.srcs/sources_1/ip/sem_0/sem_0.xci"/>
+        <Attr Name="ImportTime" Val="1752609917"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/imports/sem_0_sem_cfg.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/imports/sem_0_sem_ext.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/imports/sem_0_sem_ext_byte.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/imports/sem_0_sem_mon.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/imports/sem_0_sem_mon_fifo.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/imports/sem_0_sem_mon_piso.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/imports/sem_0_sem_mon_sipo.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/imports/sem_0_sem_example.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/imports/makedata.tcl">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="sem_0_sem_example"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/imports/sem_0_sem_example.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2025">
+      <Desc>Default settings for Implementation.</Desc>
+    </StratHandle>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

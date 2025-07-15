@@ -1,0 +1,2148 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
+| Date         : Tue Jul 15 14:23:37 2025
+| Host         : BZ-ECE-BL-LAB01 running 64-bit major release  (build 9200)
+| Command      : report_timing_summary -max_paths 10 -routable_nets -report_unconstrained -file sem_0_sem_example_timing_summary_routed.rpt -pb sem_0_sem_example_timing_summary_routed.pb -rpx sem_0_sem_example_timing_summary_routed.rpx -warn_on_violation
+| Design       : sem_0_sem_example
+| Device       : 7a35t-cpg236
+| Speed File   : -1  PRODUCTION 1.23 2018-06-13
+| Design State : Routed
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  No
+  Borrow Time for Max Delay Exceptions       :  Yes
+  Merge Timing Exceptions                    :  Yes
+  Inter-SLR Compensation                     :  Conservative
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+------------------------------------------------------------------------------------------------
+| Report Methodology
+| ------------------
+------------------------------------------------------------------------------------------------
+
+No report available as report_methodology has not been run prior. Run report_methodology on the current design for the summary of methodology violations.
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock (0)
+2. checking constant_clock (0)
+3. checking pulse_width_clock (0)
+4. checking unconstrained_internal_endpoints (0)
+5. checking no_input_delay (0)
+6. checking no_output_delay (0)
+7. checking multiple_clock (0)
+8. checking generated_clocks (0)
+9. checking loops (0)
+10. checking partial_input_delay (0)
+11. checking partial_output_delay (0)
+12. checking latch_loops (0)
+
+1. checking no_clock (0)
+------------------------
+ There are 0 register/latch pins with no clock.
+
+
+2. checking constant_clock (0)
+------------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock (0)
+---------------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints (0)
+------------------------------------------------
+ There are 0 pins that are not constrained for maximum delay.
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay (0)
+------------------------------
+ There are 0 input ports with no input delay specified.
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay (0)
+-------------------------------
+ There are 0 ports with no output delay specified.
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock (0)
+------------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks (0)
+--------------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops (0)
+---------------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay (0)
+------------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay (0)
+-------------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops (0)
+----------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+    113.827        0.000                      0                 1566        0.113        0.000                      0                 1436       61.250        0.000                       0                   580  
+
+
+All user specified timing constraints are met.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+Clock  Waveform(ns)         Period(ns)      Frequency(MHz)
+-----  ------------         ----------      --------------
+clk    {0.000 62.500}       125.000         8.000           
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+clk               113.827        0.000                      0                 1436        0.113        0.000                      0                 1436       61.250        0.000                       0                   580  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+              clk               114.866        0.000                      0                  201                                                                        
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| User Ignored Path Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock    
+----------    ----------    --------    
+(none)                      clk           
+
+
+------------------------------------------------------------------------------------------------
+| Unconstrained Path Table
+| ------------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock    
+----------    ----------    --------    
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clk
+  To Clock:  clk
+
+Setup :            0  Failing Endpoints,  Worst Slack      113.827ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.113ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack       61.250ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             113.827ns  (required time - arrival time)
+  Source:                 <hidden>
+                            (rising edge-triggered cell RAMB18E1 clocked by clk  {rise@0.000ns fall@62.500ns period=125.000ns})
+  Destination:            example_mon/example_mon_fifo_tx/augend_reg[5]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@62.500ns period=125.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            125.000ns  (clk rise@125.000ns - clk rise@0.000ns)
+  Data Path Delay:        11.180ns  (logic 4.747ns (42.461%)  route 6.433ns (57.539%))
+  Logic Levels:           8  (CARRY4=2 LUT2=1 LUT3=2 LUT5=1 LUT6=1 RAMD32=1)
+  Clock Path Skew:        -0.020ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.007ns = ( 130.007 - 125.000 ) 
+    Source Clock Delay      (SCD):    5.292ns
+    Clock Pessimism Removal (CPR):    0.264ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    PBlock               Netlist Resource(s)
+  -------------------------------------------------------------------    ----------------------------------------
+                         (clock clk rise edge)        0.000     0.000 r                       
+    C17                                               0.000     0.000 r                       clk (IN)
+                         net (fo=0)                   0.000     0.000                         clk
+    C17                  IBUF (Prop_ibuf_I_O)         1.308     1.308 r                       example_ibuf/O
+                         net (fo=1, routed)           2.273     3.582                         clk_ibufg
+    BUFGCTRL_X0Y16       BUFGCTRL (Prop_bufgctrl_I0_O)
+                                                      0.096     3.678 r                       example_bufg/O
+                         net (fo=579, routed)         1.614     5.292                         <hidden>
+    RAMB18_X0Y3          RAMB18E1                                     r  SEM_CONTROLLER       <hidden>
+  -------------------------------------------------------------------    ----------------------------------------
+    RAMB18_X0Y3          RAMB18E1 (Prop_ramb18e1_CLKBWRCLK_DOBDO[4])
+                                                      2.454     7.746 r  SEM_CONTROLLER       <hidden>
+                         net (fo=1, routed)           1.012     8.758                         <hidden>
+    SLICE_X9Y8           LUT3 (Prop_lut3_I1_O)        0.152     8.910 r  SEM_CONTROLLER       <hidden>
+                         net (fo=10, routed)          1.384    10.294                         <hidden>
+    SLICE_X6Y7           RAMD32 (Prop_ramd32_RADR0_O)
+                                                      0.332    10.626 f  SEM_CONTROLLER       <hidden>
+                         net (fo=1, routed)           0.656    11.282                         <hidden>
+    SLICE_X7Y7           LUT3 (Prop_lut3_I2_O)        0.154    11.436 f  SEM_CONTROLLER       <hidden>
+                         net (fo=19, routed)          2.303    13.739                         <hidden>
+    SLICE_X6Y13          LUT6 (Prop_lut6_I4_O)        0.327    14.066 r  SEM_CONTROLLER       <hidden>
+                         net (fo=2, routed)           0.483    14.549                         <hidden>
+    SLICE_X6Y13          LUT2 (Prop_lut2_I0_O)        0.116    14.665 r  SEM_CONTROLLER       <hidden>
+                         net (fo=14, routed)          0.594    15.259                         example_mon/example_mon_fifo_tx/monitor_txwrite
+    SLICE_X5Y14          LUT5 (Prop_lut5_I3_O)        0.328    15.587 r  SEM_CONTROLLER       example_mon/example_mon_fifo_tx/augend0_carry_i_3/O
+                         net (fo=1, routed)           0.000    15.587                         example_mon/example_mon_fifo_tx/augend0_carry_i_3_n_0
+    SLICE_X5Y14          CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550    16.137 r  SEM_CONTROLLER       example_mon/example_mon_fifo_tx/augend0_carry/CO[3]
+                         net (fo=1, routed)           0.000    16.137                         example_mon/example_mon_fifo_tx/augend0_carry_n_0
+    SLICE_X5Y15          CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334    16.471 r  SEM_CONTROLLER       example_mon/example_mon_fifo_tx/augend0_carry__0/O[1]
+                         net (fo=1, routed)           0.000    16.471                         example_mon/example_mon_fifo_tx/p_0_in[5]
+    SLICE_X5Y15          FDRE                                         r  SEM_CONTROLLER       example_mon/example_mon_fifo_tx/augend_reg[5]/D
+  -------------------------------------------------------------------    ----------------------------------------
+
+                         (clock clk rise edge)      125.000   125.000 r                       
+    C17                                               0.000   125.000 r                       clk (IN)
+                         net (fo=0)                   0.000   125.000                         clk
+    C17                  IBUF (Prop_ibuf_I_O)         1.246   126.246 r                       example_ibuf/O
+                         net (fo=1, routed)           2.155   128.401                         clk_ibufg
+    BUFGCTRL_X0Y16       BUFGCTRL (Prop_bufgctrl_I0_O)
+                                                      0.091   128.492 r                       example_bufg/O
+                         net (fo=579, routed)         1.514   130.007                         example_mon/example_mon_fifo_tx/icap_clk
+    SLICE_X5Y15          FDRE                                         r  SEM_CONTROLLER       example_mon/example_mon_fifo_tx/augend_reg[5]/C
+                         clock pessimism              0.264   130.271                           
+                         clock uncertainty           -0.035   130.236                           
+    SLICE_X5Y15          FDRE (Setup_fdre_C_D)        0.062   130.298    SEM_CONTROLLER         example_mon/example_mon_fifo_tx/augend_reg[5]
+  -------------------------------------------------------------------
+                         required time                        130.298                           
+                         arrival time                         -16.471                           
+  -------------------------------------------------------------------
+                         slack                                113.827                           
+
+Slack (MET) :             113.938ns  (required time - arrival time)
+  Source:                 <hidden>
+                            (rising edge-triggered cell RAMB18E1 clocked by clk  {rise@0.000ns fall@62.500ns period=125.000ns})
+  Destination:            example_mon/example_mon_fifo_tx/augend_reg[4]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@62.500ns period=125.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            125.000ns  (clk rise@125.000ns - clk rise@0.000ns)
+  Data Path Delay:        11.069ns  (logic 4.636ns (41.884%)  route 6.433ns (58.116%))
+  Logic Levels:           8  (CARRY4=2 LUT2=1 LUT3=2 LUT5=1 LUT6=1 RAMD32=1)
+  Clock Path Skew:        -0.020ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.007ns = ( 130.007 - 125.000 ) 
+    Source Clock Delay      (SCD):    5.292ns
+    Clock Pessimism Removal (CPR):    0.264ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    PBlock               Netlist Resource(s)
+  -------------------------------------------------------------------    ----------------------------------------
+                         (clock clk rise edge)        0.000     0.000 r                       
+    C17                                               0.000     0.000 r                       clk (IN)
+                         net (fo=0)                   0.000     0.000                         clk
+    C17                  IBUF (Prop_ibuf_I_O)         1.308     1.308 r                       example_ibuf/O
+                         net (fo=1, routed)           2.273     3.582                         clk_ibufg
+    BUFGCTRL_X0Y16       BUFGCTRL (Prop_bufgctrl_I0_O)
+                                                      0.096     3.678 r                       example_bufg/O
+                         net (fo=579, routed)         1.614     5.292                         <hidden>
+    RAMB18_X0Y3          RAMB18E1                                     r  SEM_CONTROLLER       <hidden>
+  -------------------------------------------------------------------    ----------------------------------------
+    RAMB18_X0Y3          RAMB18E1 (Prop_ramb18e1_CLKBWRCLK_DOBDO[4])
+                                                      2.454     7.746 r  SEM_CONTROLLER       <hidden>
+                         net (fo=1, routed)           1.012     8.758                         <hidden>
+    SLICE_X9Y8           LUT3 (Prop_lut3_I1_O)        0.152     8.910 r  SEM_CONTROLLER       <hidden>
+                         net (fo=10, routed)          1.384    10.294                         <hidden>
+    SLICE_X6Y7           RAMD32 (Prop_ramd32_RADR0_O)
+                                                      0.332    10.626 f  SEM_CONTROLLER       <hidden>
+                         net (fo=1, routed)           0.656    11.282                         <hidden>
+    SLICE_X7Y7           LUT3 (Prop_lut3_I2_O)        0.154    11.436 f  SEM_CONTROLLER       <hidden>
+                         net (fo=19, routed)          2.303    13.739                         <hidden>
+    SLICE_X6Y13          LUT6 (Prop_lut6_I4_O)        0.327    14.066 r  SEM_CONTROLLER       <hidden>
+                         net (fo=2, routed)           0.483    14.549                         <hidden>
+    SLICE_X6Y13          LUT2 (Prop_lut2_I0_O)        0.116    14.665 r  SEM_CONTROLLER       <hidden>
+                         net (fo=14, routed)          0.594    15.259                         example_mon/example_mon_fifo_tx/monitor_txwrite
+    SLICE_X5Y14          LUT5 (Prop_lut5_I3_O)        0.328    15.587 r  SEM_CONTROLLER       example_mon/example_mon_fifo_tx/augend0_carry_i_3/O
+                         net (fo=1, routed)           0.000    15.587                         example_mon/example_mon_fifo_tx/augend0_carry_i_3_n_0
+    SLICE_X5Y14          CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550    16.137 r  SEM_CONTROLLER       example_mon/example_mon_fifo_tx/augend0_carry/CO[3]
+                         net (fo=1, routed)           0.000    16.137                         example_mon/example_mon_fifo_tx/augend0_carry_n_0
+    SLICE_X5Y15          CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.223    16.360 r  SEM_CONTROLLER       example_mon/example_mon_fifo_tx/augend0_carry__0/O[0]
+                         net (fo=1, routed)           0.000    16.360                         example_mon/example_mon_fifo_tx/p_0_in[4]
+    SLICE_X5Y15          FDRE                                         r  SEM_CONTROLLER       example_mon/example_mon_fifo_tx/augend_reg[4]/D
+  -------------------------------------------------------------------    ----------------------------------------
+
+                         (clock clk rise edge)      125.000   125.000 r                       
+    C17                                               0.000   125.000 r                       clk (IN)
+                         net (fo=0)                   0.000   125.000                         clk
+    C17                  IBUF (Prop_ibuf_I_O)         1.246   126.246 r                       example_ibuf/O
+                         net (fo=1, routed)           2.155   128.401                         clk_ibufg
+    BUFGCTRL_X0Y16       BUFGCTRL (Prop_bufgctrl_I0_O)
+                                                      0.091   128.492 r                       example_bufg/O
+                         net (fo=579, routed)         1.514   130.007                         example_mon/example_mon_fifo_tx/icap_clk
+    SLICE_X5Y15          FDRE                                         r  SEM_CONTROLLER       example_mon/example_mon_fifo_tx/augend_reg[4]/C
+                         clock pessimism              0.264   130.271                           
+                         clock uncertainty           -0.035   130.236                           
+    SLICE_X5Y15          FDRE (Setup_fdre_C_D)        0.062   130.298    SEM_CONTROLLER         example_mon/example_mon_fifo_tx/augend_reg[4]
+  -------------------------------------------------------------------
+                         required time                        130.298                           
+                         arrival time                         -16.360                           
+  -------------------------------------------------------------------
+                         slack                                113.938                           
+
+Slack (MET) :             114.025ns  (required time - arrival time)
+  Source:                 <hidden>
+                            (rising edge-triggered cell RAMB18E1 clocked by clk  {rise@0.000ns fall@62.500ns period=125.000ns})
+  Destination:            example_mon/example_mon_fifo_rx/augend_reg[5]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@62.500ns period=125.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            125.000ns  (clk rise@125.000ns - clk rise@0.000ns)
+  Data Path Delay:        10.981ns  (logic 4.551ns (41.446%)  route 6.430ns (58.554%))
+  Logic Levels:           8  (CARRY4=2 LUT2=1 LUT3=2 LUT5=1 LUT6=1 RAMD32=1)
+  Clock Path Skew:        -0.021ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.006ns = ( 130.006 - 125.000 ) 
+    Source Clock Delay      (SCD):    5.292ns
+    Clock Pessimism Removal (CPR):    0.264ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    PBlock               Netlist Resource(s)
+  -------------------------------------------------------------------    ----------------------------------------
+                         (clock clk rise edge)        0.000     0.000 r                       
+    C17                                               0.000     0.000 r                       clk (IN)
+                         net (fo=0)                   0.000     0.000                         clk
+    C17                  IBUF (Prop_ibuf_I_O)         1.308     1.308 r                       example_ibuf/O
+                         net (fo=1, routed)           2.273     3.582                         clk_ibufg
+    BUFGCTRL_X0Y16       BUFGCTRL (Prop_bufgctrl_I0_O)
+                                                      0.096     3.678 r                       example_bufg/O
+                         net (fo=579, routed)         1.614     5.292                         <hidden>
+    RAMB18_X0Y3          RAMB18E1                                     r  SEM_CONTROLLER       <hidden>
+  -------------------------------------------------------------------    ----------------------------------------
+    RAMB18_X0Y3          RAMB18E1 (Prop_ramb18e1_CLKBWRCLK_DOBDO[4])
+                                                      2.454     7.746 r  SEM_CONTROLLER       <hidden>
+                         net (fo=1, routed)           1.012     8.758                         <hidden>
+    SLICE_X9Y8           LUT3 (Prop_lut3_I1_O)        0.152     8.910 r  SEM_CONTROLLER       <hidden>
+                         net (fo=10, routed)          1.384    10.294                         <hidden>
+    SLICE_X6Y7           RAMD32 (Prop_ramd32_RADR0_O)
+                                                      0.332    10.626 f  SEM_CONTROLLER       <hidden>
+                         net (fo=1, routed)           0.656    11.282                         <hidden>
+    SLICE_X7Y7           LUT3 (Prop_lut3_I2_O)        0.154    11.436 f  SEM_CONTROLLER       <hidden>
+                         net (fo=19, routed)          2.303    13.739                         <hidden>
+    SLICE_X6Y13          LUT6 (Prop_lut6_I4_O)        0.327    14.066 r  SEM_CONTROLLER       <hidden>
+                         net (fo=2, routed)           0.483    14.549                         <hidden>
+    SLICE_X6Y13          LUT2 (Prop_lut2_I0_O)        0.124    14.673 r  SEM_CONTROLLER       <hidden>
+                         net (fo=6, routed)           0.591    15.264                         example_mon/example_mon_fifo_rx/monitor_rxread
+    SLICE_X4Y15          LUT5 (Prop_lut5_I1_O)        0.124    15.388 r  SEM_CONTROLLER       example_mon/example_mon_fifo_rx/augend0_carry_i_3__0/O
+                         net (fo=1, routed)           0.000    15.388                         example_mon/example_mon_fifo_rx/augend0_carry_i_3__0_n_0
+    SLICE_X4Y15          CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550    15.938 r  SEM_CONTROLLER       example_mon/example_mon_fifo_rx/augend0_carry/CO[3]
+                         net (fo=1, routed)           0.000    15.938                         example_mon/example_mon_fifo_rx/augend0_carry_n_0
+    SLICE_X4Y16          CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334    16.272 r  SEM_CONTROLLER       example_mon/example_mon_fifo_rx/augend0_carry__0/O[1]
+                         net (fo=1, routed)           0.000    16.272                         example_mon/example_mon_fifo_rx/p_0_in__0[5]
+    SLICE_X4Y16          FDRE                                         r  SEM_CONTROLLER       example_mon/example_mon_fifo_rx/augend_reg[5]/D
+  -------------------------------------------------------------------    ----------------------------------------
+
+                         (clock clk rise edge)      125.000   125.000 r                       
+    C17                                               0.000   125.000 r                       clk (IN)
+                         net (fo=0)                   0.000   125.000                         clk
+    C17                  IBUF (Prop_ibuf_I_O)         1.246   126.246 r                       example_ibuf/O
+                         net (fo=1, routed)           2.155   128.401                         clk_ibufg
+    BUFGCTRL_X0Y16       BUFGCTRL (Prop_bufgctrl_I0_O)
+                                                      0.091   128.492 r                       example_bufg/O
+                         net (fo=579, routed)         1.513   130.006                         example_mon/example_mon_fifo_rx/icap_clk
+    SLICE_X4Y16          FDRE                                         r  SEM_CONTROLLER       example_mon/example_mon_fifo_rx/augend_reg[5]/C
+                         clock pessimism              0.264   130.270                           
+                         clock uncertainty           -0.035   130.235                           
+    SLICE_X4Y16          FDRE (Setup_fdre_C_D)        0.062   130.297    SEM_CONTROLLER         example_mon/example_mon_fifo_rx/augend_reg[5]
+  -------------------------------------------------------------------
+                         required time                        130.297                           
+                         arrival time                         -16.272                           
+  -------------------------------------------------------------------
+                         slack                                114.025                           
+
+Slack (MET) :             114.062ns  (required time - arrival time)
+  Source:                 <hidden>
+                            (rising edge-triggered cell RAMB18E1 clocked by clk  {rise@0.000ns fall@62.500ns period=125.000ns})
+  Destination:            example_ext/rx_mbox_src_irq_reg_srl2/D
+                            (rising edge-triggered cell SRL16E clocked by clk  {rise@0.000ns fall@62.500ns period=125.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            125.000ns  (clk rise@125.000ns - clk rise@0.000ns)
+  Data Path Delay:        10.549ns  (logic 4.125ns (39.102%)  route 6.424ns (60.898%))
+  Logic Levels:           6  (LUT2=2 LUT3=2 LUT6=1 RAMD32=1)
+  Clock Path Skew:        -0.085ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.942ns = ( 129.942 - 125.000 ) 
+    Source Clock Delay      (SCD):    5.292ns
+    Clock Pessimism Removal (CPR):    0.264ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    PBlock               Netlist Resource(s)
+  -------------------------------------------------------------------    ----------------------------------------
+                         (clock clk rise edge)        0.000     0.000 r                       
+    C17                                               0.000     0.000 r                       clk (IN)
+                         net (fo=0)                   0.000     0.000                         clk
+    C17                  IBUF (Prop_ibuf_I_O)         1.308     1.308 r                       example_ibuf/O
+                         net (fo=1, routed)           2.273     3.582                         clk_ibufg
+    BUFGCTRL_X0Y16       BUFGCTRL (Prop_bufgctrl_I0_O)
+                                                      0.096     3.678 r                       example_bufg/O
+                         net (fo=579, routed)         1.614     5.292                         <hidden>
+    RAMB18_X0Y3          RAMB18E1                                     r  SEM_CONTROLLER       <hidden>
+  -------------------------------------------------------------------    ----------------------------------------
+    RAMB18_X0Y3          RAMB18E1 (Prop_ramb18e1_CLKBWRCLK_DOBDO[4])
+                                                      2.454     7.746 r  SEM_CONTROLLER       <hidden>
+                         net (fo=1, routed)           1.012     8.758                         <hidden>
+    SLICE_X9Y8           LUT3 (Prop_lut3_I1_O)        0.152     8.910 r  SEM_CONTROLLER       <hidden>
+                         net (fo=10, routed)          1.384    10.294                         <hidden>
+    SLICE_X6Y7           RAMD32 (Prop_ramd32_RADR0_O)
+                                                      0.361    10.655 f  SEM_CONTROLLER       <hidden>
+                         net (fo=1, routed)           0.821    11.475                         <hidden>
+    SLICE_X4Y8           LUT3 (Prop_lut3_I2_O)        0.361    11.836 f  SEM_CONTROLLER       <hidden>
+                         net (fo=19, routed)          1.280    13.116                         <hidden>
+    SLICE_X9Y11          LUT6 (Prop_lut6_I1_O)        0.327    13.443 r  SEM_CONTROLLER       <hidden>
+                         net (fo=2, routed)           0.469    13.913                         <hidden>
+    SLICE_X9Y11          LUT2 (Prop_lut2_I0_O)        0.118    14.031 r  SEM_CONTROLLER       <hidden>
+                         net (fo=3, routed)           0.981    15.012                         example_ext/fetch_rxread
+    SLICE_X10Y15         LUT2 (Prop_lut2_I0_O)        0.352    15.364 r  SEM_CONTROLLER       example_ext/rx_mbox_src_irq_reg_srl2_i_1/O
+                         net (fo=1, routed)           0.477    15.841                         example_ext/rx_mbox_src_irq_reg_srl2_i_1_n_0
+    SLICE_X10Y14         SRL16E                                       r  SEM_CONTROLLER       example_ext/rx_mbox_src_irq_reg_srl2/D
+  -------------------------------------------------------------------    ----------------------------------------
+
+                         (clock clk rise edge)      125.000   125.000 r                       
+    C17                                               0.000   125.000 r                       clk (IN)
+                         net (fo=0)                   0.000   125.000                         clk
+    C17                  IBUF (Prop_ibuf_I_O)         1.246   126.246 r                       example_ibuf/O
+                         net (fo=1, routed)           2.155   128.401                         clk_ibufg
+    BUFGCTRL_X0Y16       BUFGCTRL (Prop_bufgctrl_I0_O)
+                                                      0.091   128.492 r                       example_bufg/O
+                         net (fo=579, routed)         1.449   129.942                         example_ext/icap_clk
+    SLICE_X10Y14         SRL16E                                       r  SEM_CONTROLLER       example_ext/rx_mbox_src_irq_reg_srl2/CLK
+                         clock pessimism              0.264   130.206                           
+                         clock uncertainty           -0.035   130.171                           
+    SLICE_X10Y14         SRL16E (Setup_srl16e_CLK_D)
+                                                     -0.268   129.903    SEM_CONTROLLER         example_ext/rx_mbox_src_irq_reg_srl2
+  -------------------------------------------------------------------
+                         required time                        129.903                           
+                         arrival time                         -15.841                           
+  -------------------------------------------------------------------
+                         slack                                114.062                           
+
+Slack (MET) :             114.072ns  (required time - arrival time)
+  Source:                 <hidden>
+                            (rising edge-triggered cell RAMB18E1 clocked by clk  {rise@0.000ns fall@62.500ns period=125.000ns})
+  Destination:            example_mon/example_mon_fifo_tx/augend_reg[3]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@62.500ns period=125.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            125.000ns  (clk rise@125.000ns - clk rise@0.000ns)
+  Data Path Delay:        10.936ns  (logic 4.503ns (41.177%)  route 6.433ns (58.823%))
+  Logic Levels:           7  (CARRY4=1 LUT2=1 LUT3=2 LUT5=1 LUT6=1 RAMD32=1)
+  Clock Path Skew:        -0.019ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.008ns = ( 130.008 - 125.000 ) 
+    Source Clock Delay      (SCD):    5.292ns
+    Clock Pessimism Removal (CPR):    0.264ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    PBlock               Netlist Resource(s)
+  -------------------------------------------------------------------    ----------------------------------------
+                         (clock clk rise edge)        0.000     0.000 r                       
+    C17                                               0.000     0.000 r                       clk (IN)
+                         net (fo=0)                   0.000     0.000                         clk
+    C17                  IBUF (Prop_ibuf_I_O)         1.308     1.308 r                       example_ibuf/O
+                         net (fo=1, routed)           2.273     3.582                         clk_ibufg
+    BUFGCTRL_X0Y16       BUFGCTRL (Prop_bufgctrl_I0_O)
+                                                      0.096     3.678 r                       example_bufg/O
+                         net (fo=579, routed)         1.614     5.292                         <hidden>
+    RAMB18_X0Y3          RAMB18E1                                     r  SEM_CONTROLLER       <hidden>
+  -------------------------------------------------------------------    ----------------------------------------
+    RAMB18_X0Y3          RAMB18E1 (Prop_ramb18e1_CLKBWRCLK_DOBDO[4])
+                                                      2.454     7.746 r  SEM_CONTROLLER       <hidden>
+                         net (fo=1, routed)           1.012     8.758                         <hidden>
+    SLICE_X9Y8           LUT3 (Prop_lut3_I1_O)        0.152     8.910 r  SEM_CONTROLLER       <hidden>
+                         net (fo=10, routed)          1.384    10.294                         <hidden>
+    SLICE_X6Y7           RAMD32 (Prop_ramd32_RADR0_O)
+                                                      0.332    10.626 f  SEM_CONTROLLER       <hidden>
+                         net (fo=1, routed)           0.656    11.282                         <hidden>
+    SLICE_X7Y7           LUT3 (Prop_lut3_I2_O)        0.154    11.436 f  SEM_CONTROLLER       <hidden>
+                         net (fo=19, routed)          2.303    13.739                         <hidden>
+    SLICE_X6Y13          LUT6 (Prop_lut6_I4_O)        0.327    14.066 r  SEM_CONTROLLER       <hidden>
+                         net (fo=2, routed)           0.483    14.549                         <hidden>
+    SLICE_X6Y13          LUT2 (Prop_lut2_I0_O)        0.116    14.665 r  SEM_CONTROLLER       <hidden>
+                         net (fo=14, routed)          0.594    15.259                         example_mon/example_mon_fifo_tx/monitor_txwrite
+    SLICE_X5Y14          LUT5 (Prop_lut5_I3_O)        0.328    15.587 r  SEM_CONTROLLER       example_mon/example_mon_fifo_tx/augend0_carry_i_3/O
+                         net (fo=1, routed)           0.000    15.587                         example_mon/example_mon_fifo_tx/augend0_carry_i_3_n_0
+    SLICE_X5Y14          CARRY4 (Prop_carry4_S[1]_O[3])
+                                                      0.640    16.227 r  SEM_CONTROLLER       example_mon/example_mon_fifo_tx/augend0_carry/O[3]
+                         net (fo=1, routed)           0.000    16.227                         example_mon/example_mon_fifo_tx/p_0_in[3]
+    SLICE_X5Y14          FDRE                                         r  SEM_CONTROLLER       example_mon/example_mon_fifo_tx/augend_reg[3]/D
+  -------------------------------------------------------------------    ----------------------------------------
+
+                         (clock clk rise edge)      125.000   125.000 r                       
+    C17                                               0.000   125.000 r                       clk (IN)
+                         net (fo=0)                   0.000   125.000                         clk
+    C17                  IBUF (Prop_ibuf_I_O)         1.246   126.246 r                       example_ibuf/O
+                         net (fo=1, routed)           2.155   128.401                         clk_ibufg
+    BUFGCTRL_X0Y16       BUFGCTRL (Prop_bufgctrl_I0_O)
+                                                      0.091   128.492 r                       example_bufg/O
+                         net (fo=579, routed)         1.515   130.008                         example_mon/example_mon_fifo_tx/icap_clk
+    SLICE_X5Y14          FDRE                                         r  SEM_CONTROLLER       example_mon/example_mon_fifo_tx/augend_reg[3]/C
+                         clock pessimism              0.264   130.272                           
+                         clock uncertainty           -0.035   130.237                           
+    SLICE_X5Y14          FDRE (Setup_fdre_C_D)        0.062   130.299    SEM_CONTROLLER         example_mon/example_mon_fifo_tx/augend_reg[3]
+  -------------------------------------------------------------------
+                         required time                        130.299                           
+                         arrival time                         -16.227                           
+  -------------------------------------------------------------------
+                         slack                                114.072                           
+
+Slack (MET) :             114.132ns  (required time - arrival time)
+  Source:                 <hidden>
+                            (rising edge-triggered cell RAMB18E1 clocked by clk  {rise@0.000ns fall@62.500ns period=125.000ns})
+  Destination:            example_mon/example_mon_fifo_tx/augend_reg[2]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@62.500ns period=125.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            125.000ns  (clk rise@125.000ns - clk rise@0.000ns)
+  Data Path Delay:        10.876ns  (logic 4.443ns (40.853%)  route 6.433ns (59.147%))
+  Logic Levels:           7  (CARRY4=1 LUT2=1 LUT3=2 LUT5=1 LUT6=1 RAMD32=1)
+  Clock Path Skew:        -0.019ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.008ns = ( 130.008 - 125.000 ) 
+    Source Clock Delay      (SCD):    5.292ns
+    Clock Pessimism Removal (CPR):    0.264ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    PBlock               Netlist Resource(s)
+  -------------------------------------------------------------------    ----------------------------------------
+                         (clock clk rise edge)        0.000     0.000 r                       
+    C17                                               0.000     0.000 r                       clk (IN)
+                         net (fo=0)                   0.000     0.000                         clk
+    C17                  IBUF (Prop_ibuf_I_O)         1.308     1.308 r                       example_ibuf/O
+                         net (fo=1, routed)           2.273     3.582                         clk_ibufg
+    BUFGCTRL_X0Y16       BUFGCTRL (Prop_bufgctrl_I0_O)
+                                                      0.096     3.678 r                       example_bufg/O
+                         net (fo=579, routed)         1.614     5.292                         <hidden>
+    RAMB18_X0Y3          RAMB18E1                                     r  SEM_CONTROLLER       <hidden>
+  -------------------------------------------------------------------    ----------------------------------------
+    RAMB18_X0Y3          RAMB18E1 (Prop_ramb18e1_CLKBWRCLK_DOBDO[4])
+                                                      2.454     7.746 r  SEM_CONTROLLER       <hidden>
+                         net (fo=1, routed)           1.012     8.758                         <hidden>
+    SLICE_X9Y8           LUT3 (Prop_lut3_I1_O)        0.152     8.910 r  SEM_CONTROLLER       <hidden>
+                         net (fo=10, routed)          1.384    10.294                         <hidden>
+    SLICE_X6Y7           RAMD32 (Prop_ramd32_RADR0_O)
+                                                      0.332    10.626 f  SEM_CONTROLLER       <hidden>
+                         net (fo=1, routed)           0.656    11.282                         <hidden>
+    SLICE_X7Y7           LUT3 (Prop_lut3_I2_O)        0.154    11.436 f  SEM_CONTROLLER       <hidden>
+                         net (fo=19, routed)          2.303    13.739                         <hidden>
+    SLICE_X6Y13          LUT6 (Prop_lut6_I4_O)        0.327    14.066 r  SEM_CONTROLLER       <hidden>
+                         net (fo=2, routed)           0.483    14.549                         <hidden>
+    SLICE_X6Y13          LUT2 (Prop_lut2_I0_O)        0.116    14.665 r  SEM_CONTROLLER       <hidden>
+                         net (fo=14, routed)          0.594    15.259                         example_mon/example_mon_fifo_tx/monitor_txwrite
+    SLICE_X5Y14          LUT5 (Prop_lut5_I3_O)        0.328    15.587 r  SEM_CONTROLLER       example_mon/example_mon_fifo_tx/augend0_carry_i_3/O
+                         net (fo=1, routed)           0.000    15.587                         example_mon/example_mon_fifo_tx/augend0_carry_i_3_n_0
+    SLICE_X5Y14          CARRY4 (Prop_carry4_S[1]_O[2])
+                                                      0.580    16.167 r  SEM_CONTROLLER       example_mon/example_mon_fifo_tx/augend0_carry/O[2]
+                         net (fo=1, routed)           0.000    16.167                         example_mon/example_mon_fifo_tx/p_0_in[2]
+    SLICE_X5Y14          FDRE                                         r  SEM_CONTROLLER       example_mon/example_mon_fifo_tx/augend_reg[2]/D
+  -------------------------------------------------------------------    ----------------------------------------
+
+                         (clock clk rise edge)      125.000   125.000 r                       
+    C17                                               0.000   125.000 r                       clk (IN)
+                         net (fo=0)                   0.000   125.000                         clk
+    C17                  IBUF (Prop_ibuf_I_O)         1.246   126.246 r                       example_ibuf/O
+                         net (fo=1, routed)           2.155   128.401                         clk_ibufg
+    BUFGCTRL_X0Y16       BUFGCTRL (Prop_bufgctrl_I0_O)
+                                                      0.091   128.492 r                       example_bufg/O
+                         net (fo=579, routed)         1.515   130.008                         example_mon/example_mon_fifo_tx/icap_clk
+    SLICE_X5Y14          FDRE                                         r  SEM_CONTROLLER       example_mon/example_mon_fifo_tx/augend_reg[2]/C
+                         clock pessimism              0.264   130.272                           
+                         clock uncertainty           -0.035   130.237                           
+    SLICE_X5Y14          FDRE (Setup_fdre_C_D)        0.062   130.299    SEM_CONTROLLER         example_mon/example_mon_fifo_tx/augend_reg[2]
+  -------------------------------------------------------------------
+                         required time                        130.299                           
+                         arrival time                         -16.167                           
+  -------------------------------------------------------------------
+                         slack                                114.132                           
+
+Slack (MET) :             114.136ns  (required time - arrival time)
+  Source:                 <hidden>
+                            (rising edge-triggered cell RAMB18E1 clocked by clk  {rise@0.000ns fall@62.500ns period=125.000ns})
+  Destination:            example_mon/example_mon_fifo_rx/augend_reg[4]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@62.500ns period=125.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            125.000ns  (clk rise@125.000ns - clk rise@0.000ns)
+  Data Path Delay:        10.870ns  (logic 4.440ns (40.848%)  route 6.430ns (59.152%))
+  Logic Levels:           8  (CARRY4=2 LUT2=1 LUT3=2 LUT5=1 LUT6=1 RAMD32=1)
+  Clock Path Skew:        -0.021ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.006ns = ( 130.006 - 125.000 ) 
+    Source Clock Delay      (SCD):    5.292ns
+    Clock Pessimism Removal (CPR):    0.264ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    PBlock               Netlist Resource(s)
+  -------------------------------------------------------------------    ----------------------------------------
+                         (clock clk rise edge)        0.000     0.000 r                       
+    C17                                               0.000     0.000 r                       clk (IN)
+                         net (fo=0)                   0.000     0.000                         clk
+    C17                  IBUF (Prop_ibuf_I_O)         1.308     1.308 r                       example_ibuf/O
+                         net (fo=1, routed)           2.273     3.582                         clk_ibufg
+    BUFGCTRL_X0Y16       BUFGCTRL (Prop_bufgctrl_I0_O)
+                                                      0.096     3.678 r                       example_bufg/O
+                         net (fo=579, routed)         1.614     5.292                         <hidden>
+    RAMB18_X0Y3          RAMB18E1                                     r  SEM_CONTROLLER       <hidden>
+  -------------------------------------------------------------------    ----------------------------------------
+    RAMB18_X0Y3          RAMB18E1 (Prop_ramb18e1_CLKBWRCLK_DOBDO[4])
+                                                      2.454     7.746 r  SEM_CONTROLLER       <hidden>
+                         net (fo=1, routed)           1.012     8.758                         <hidden>
+    SLICE_X9Y8           LUT3 (Prop_lut3_I1_O)        0.152     8.910 r  SEM_CONTROLLER       <hidden>
+                         net (fo=10, routed)          1.384    10.294                         <hidden>
+    SLICE_X6Y7           RAMD32 (Prop_ramd32_RADR0_O)
+                                                      0.332    10.626 f  SEM_CONTROLLER       <hidden>
+                         net (fo=1, routed)           0.656    11.282                         <hidden>
+    SLICE_X7Y7           LUT3 (Prop_lut3_I2_O)        0.154    11.436 f  SEM_CONTROLLER       <hidden>
+                         net (fo=19, routed)          2.303    13.739                         <hidden>
+    SLICE_X6Y13          LUT6 (Prop_lut6_I4_O)        0.327    14.066 r  SEM_CONTROLLER       <hidden>
+                         net (fo=2, routed)           0.483    14.549                         <hidden>
+    SLICE_X6Y13          LUT2 (Prop_lut2_I0_O)        0.124    14.673 r  SEM_CONTROLLER       <hidden>
+                         net (fo=6, routed)           0.591    15.264                         example_mon/example_mon_fifo_rx/monitor_rxread
+    SLICE_X4Y15          LUT5 (Prop_lut5_I1_O)        0.124    15.388 r  SEM_CONTROLLER       example_mon/example_mon_fifo_rx/augend0_carry_i_3__0/O
+                         net (fo=1, routed)           0.000    15.388                         example_mon/example_mon_fifo_rx/augend0_carry_i_3__0_n_0
+    SLICE_X4Y15          CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550    15.938 r  SEM_CONTROLLER       example_mon/example_mon_fifo_rx/augend0_carry/CO[3]
+                         net (fo=1, routed)           0.000    15.938                         example_mon/example_mon_fifo_rx/augend0_carry_n_0
+    SLICE_X4Y16          CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.223    16.161 r  SEM_CONTROLLER       example_mon/example_mon_fifo_rx/augend0_carry__0/O[0]
+                         net (fo=1, routed)           0.000    16.161                         example_mon/example_mon_fifo_rx/p_0_in__0[4]
+    SLICE_X4Y16          FDRE                                         r  SEM_CONTROLLER       example_mon/example_mon_fifo_rx/augend_reg[4]/D
+  -------------------------------------------------------------------    ----------------------------------------
+
+                         (clock clk rise edge)      125.000   125.000 r                       
+    C17                                               0.000   125.000 r                       clk (IN)
+                         net (fo=0)                   0.000   125.000                         clk
+    C17                  IBUF (Prop_ibuf_I_O)         1.246   126.246 r                       example_ibuf/O
+                         net (fo=1, routed)           2.155   128.401                         clk_ibufg
+    BUFGCTRL_X0Y16       BUFGCTRL (Prop_bufgctrl_I0_O)
+                                                      0.091   128.492 r                       example_bufg/O
+                         net (fo=579, routed)         1.513   130.006                         example_mon/example_mon_fifo_rx/icap_clk
+    SLICE_X4Y16          FDRE                                         r  SEM_CONTROLLER       example_mon/example_mon_fifo_rx/augend_reg[4]/C
+                         clock pessimism              0.264   130.270                           
+                         clock uncertainty           -0.035   130.235                           
+    SLICE_X4Y16          FDRE (Setup_fdre_C_D)        0.062   130.297    SEM_CONTROLLER         example_mon/example_mon_fifo_rx/augend_reg[4]
+  -------------------------------------------------------------------
+                         required time                        130.297                           
+                         arrival time                         -16.161                           
+  -------------------------------------------------------------------
+                         slack                                114.136                           
+
+Slack (MET) :             114.270ns  (required time - arrival time)
+  Source:                 <hidden>
+                            (rising edge-triggered cell RAMB18E1 clocked by clk  {rise@0.000ns fall@62.500ns period=125.000ns})
+  Destination:            example_mon/example_mon_fifo_rx/augend_reg[3]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@62.500ns period=125.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            125.000ns  (clk rise@125.000ns - clk rise@0.000ns)
+  Data Path Delay:        10.737ns  (logic 4.307ns (40.115%)  route 6.430ns (59.885%))
+  Logic Levels:           7  (CARRY4=1 LUT2=1 LUT3=2 LUT5=1 LUT6=1 RAMD32=1)
+  Clock Path Skew:        -0.020ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.007ns = ( 130.007 - 125.000 ) 
+    Source Clock Delay      (SCD):    5.292ns
+    Clock Pessimism Removal (CPR):    0.264ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    PBlock               Netlist Resource(s)
+  -------------------------------------------------------------------    ----------------------------------------
+                         (clock clk rise edge)        0.000     0.000 r                       
+    C17                                               0.000     0.000 r                       clk (IN)
+                         net (fo=0)                   0.000     0.000                         clk
+    C17                  IBUF (Prop_ibuf_I_O)         1.308     1.308 r                       example_ibuf/O
+                         net (fo=1, routed)           2.273     3.582                         clk_ibufg
+    BUFGCTRL_X0Y16       BUFGCTRL (Prop_bufgctrl_I0_O)
+                                                      0.096     3.678 r                       example_bufg/O
+                         net (fo=579, routed)         1.614     5.292                         <hidden>
+    RAMB18_X0Y3          RAMB18E1                                     r  SEM_CONTROLLER       <hidden>
+  -------------------------------------------------------------------    ----------------------------------------
+    RAMB18_X0Y3          RAMB18E1 (Prop_ramb18e1_CLKBWRCLK_DOBDO[4])
+                                                      2.454     7.746 r  SEM_CONTROLLER       <hidden>
+                         net (fo=1, routed)           1.012     8.758                         <hidden>
+    SLICE_X9Y8           LUT3 (Prop_lut3_I1_O)        0.152     8.910 r  SEM_CONTROLLER       <hidden>
+                         net (fo=10, routed)          1.384    10.294                         <hidden>
+    SLICE_X6Y7           RAMD32 (Prop_ramd32_RADR0_O)
+                                                      0.332    10.626 f  SEM_CONTROLLER       <hidden>
+                         net (fo=1, routed)           0.656    11.282                         <hidden>
+    SLICE_X7Y7           LUT3 (Prop_lut3_I2_O)        0.154    11.436 f  SEM_CONTROLLER       <hidden>
+                         net (fo=19, routed)          2.303    13.739                         <hidden>
+    SLICE_X6Y13          LUT6 (Prop_lut6_I4_O)        0.327    14.066 r  SEM_CONTROLLER       <hidden>
+                         net (fo=2, routed)           0.483    14.549                         <hidden>
+    SLICE_X6Y13          LUT2 (Prop_lut2_I0_O)        0.124    14.673 r  SEM_CONTROLLER       <hidden>
+                         net (fo=6, routed)           0.591    15.264                         example_mon/example_mon_fifo_rx/monitor_rxread
+    SLICE_X4Y15          LUT5 (Prop_lut5_I1_O)        0.124    15.388 r  SEM_CONTROLLER       example_mon/example_mon_fifo_rx/augend0_carry_i_3__0/O
+                         net (fo=1, routed)           0.000    15.388                         example_mon/example_mon_fifo_rx/augend0_carry_i_3__0_n_0
+    SLICE_X4Y15          CARRY4 (Prop_carry4_S[1]_O[3])
+                                                      0.640    16.028 r  SEM_CONTROLLER       example_mon/example_mon_fifo_rx/augend0_carry/O[3]
+                         net (fo=1, routed)           0.000    16.028                         example_mon/example_mon_fifo_rx/p_0_in__0[3]
+    SLICE_X4Y15          FDRE                                         r  SEM_CONTROLLER       example_mon/example_mon_fifo_rx/augend_reg[3]/D
+  -------------------------------------------------------------------    ----------------------------------------
+
+                         (clock clk rise edge)      125.000   125.000 r                       
+    C17                                               0.000   125.000 r                       clk (IN)
+                         net (fo=0)                   0.000   125.000                         clk
+    C17                  IBUF (Prop_ibuf_I_O)         1.246   126.246 r                       example_ibuf/O
+                         net (fo=1, routed)           2.155   128.401                         clk_ibufg
+    BUFGCTRL_X0Y16       BUFGCTRL (Prop_bufgctrl_I0_O)
+                                                      0.091   128.492 r                       example_bufg/O
+                         net (fo=579, routed)         1.514   130.007                         example_mon/example_mon_fifo_rx/icap_clk
+    SLICE_X4Y15          FDRE                                         r  SEM_CONTROLLER       example_mon/example_mon_fifo_rx/augend_reg[3]/C
+                         clock pessimism              0.264   130.271                           
+                         clock uncertainty           -0.035   130.236                           
+    SLICE_X4Y15          FDRE (Setup_fdre_C_D)        0.062   130.298    SEM_CONTROLLER         example_mon/example_mon_fifo_rx/augend_reg[3]
+  -------------------------------------------------------------------
+                         required time                        130.298                           
+                         arrival time                         -16.028                           
+  -------------------------------------------------------------------
+                         slack                                114.270                           
+
+Slack (MET) :             114.292ns  (required time - arrival time)
+  Source:                 <hidden>
+                            (rising edge-triggered cell RAMB18E1 clocked by clk  {rise@0.000ns fall@62.500ns period=125.000ns})
+  Destination:            example_mon/example_mon_fifo_tx/augend_reg[1]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@62.500ns period=125.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            125.000ns  (clk rise@125.000ns - clk rise@0.000ns)
+  Data Path Delay:        10.716ns  (logic 4.287ns (40.007%)  route 6.429ns (59.993%))
+  Logic Levels:           7  (CARRY4=1 LUT2=1 LUT3=2 LUT5=1 LUT6=1 RAMD32=1)
+  Clock Path Skew:        -0.019ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.008ns = ( 130.008 - 125.000 ) 
+    Source Clock Delay      (SCD):    5.292ns
+    Clock Pessimism Removal (CPR):    0.264ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    PBlock               Netlist Resource(s)
+  -------------------------------------------------------------------    ----------------------------------------
+                         (clock clk rise edge)        0.000     0.000 r                       
+    C17                                               0.000     0.000 r                       clk (IN)
+                         net (fo=0)                   0.000     0.000                         clk
+    C17                  IBUF (Prop_ibuf_I_O)         1.308     1.308 r                       example_ibuf/O
+                         net (fo=1, routed)           2.273     3.582                         clk_ibufg
+    BUFGCTRL_X0Y16       BUFGCTRL (Prop_bufgctrl_I0_O)
+                                                      0.096     3.678 r                       example_bufg/O
+                         net (fo=579, routed)         1.614     5.292                         <hidden>
+    RAMB18_X0Y3          RAMB18E1                                     r  SEM_CONTROLLER       <hidden>
+  -------------------------------------------------------------------    ----------------------------------------
+    RAMB18_X0Y3          RAMB18E1 (Prop_ramb18e1_CLKBWRCLK_DOBDO[4])
+                                                      2.454     7.746 r  SEM_CONTROLLER       <hidden>
+                         net (fo=1, routed)           1.012     8.758                         <hidden>
+    SLICE_X9Y8           LUT3 (Prop_lut3_I1_O)        0.152     8.910 r  SEM_CONTROLLER       <hidden>
+                         net (fo=10, routed)          1.384    10.294                         <hidden>
+    SLICE_X6Y7           RAMD32 (Prop_ramd32_RADR0_O)
+                                                      0.332    10.626 f  SEM_CONTROLLER       <hidden>
+                         net (fo=1, routed)           0.656    11.282                         <hidden>
+    SLICE_X7Y7           LUT3 (Prop_lut3_I2_O)        0.154    11.436 f  SEM_CONTROLLER       <hidden>
+                         net (fo=19, routed)          2.303    13.739                         <hidden>
+    SLICE_X6Y13          LUT6 (Prop_lut6_I4_O)        0.327    14.066 r  SEM_CONTROLLER       <hidden>
+                         net (fo=2, routed)           0.483    14.549                         <hidden>
+    SLICE_X6Y13          LUT2 (Prop_lut2_I0_O)        0.116    14.665 r  SEM_CONTROLLER       <hidden>
+                         net (fo=14, routed)          0.590    15.255                         example_mon/example_mon_fifo_tx/monitor_txwrite
+    SLICE_X5Y14          LUT5 (Prop_lut5_I3_O)        0.328    15.583 r  SEM_CONTROLLER       example_mon/example_mon_fifo_tx/augend0_carry_i_4/O
+                         net (fo=1, routed)           0.000    15.583                         example_mon/example_mon_fifo_tx/augend0_carry_i_4_n_0
+    SLICE_X5Y14          CARRY4 (Prop_carry4_S[0]_O[1])
+                                                      0.424    16.007 r  SEM_CONTROLLER       example_mon/example_mon_fifo_tx/augend0_carry/O[1]
+                         net (fo=1, routed)           0.000    16.007                         example_mon/example_mon_fifo_tx/p_0_in[1]
+    SLICE_X5Y14          FDRE                                         r  SEM_CONTROLLER       example_mon/example_mon_fifo_tx/augend_reg[1]/D
+  -------------------------------------------------------------------    ----------------------------------------
+
+                         (clock clk rise edge)      125.000   125.000 r                       
+    C17                                               0.000   125.000 r                       clk (IN)
+                         net (fo=0)                   0.000   125.000                         clk
+    C17                  IBUF (Prop_ibuf_I_O)         1.246   126.246 r                       example_ibuf/O
+                         net (fo=1, routed)           2.155   128.401                         clk_ibufg
+    BUFGCTRL_X0Y16       BUFGCTRL (Prop_bufgctrl_I0_O)
+                                                      0.091   128.492 r                       example_bufg/O
+                         net (fo=579, routed)         1.515   130.008                         example_mon/example_mon_fifo_tx/icap_clk
+    SLICE_X5Y14          FDRE                                         r  SEM_CONTROLLER       example_mon/example_mon_fifo_tx/augend_reg[1]/C
+                         clock pessimism              0.264   130.272                           
+                         clock uncertainty           -0.035   130.237                           
+    SLICE_X5Y14          FDRE (Setup_fdre_C_D)        0.062   130.299    SEM_CONTROLLER         example_mon/example_mon_fifo_tx/augend_reg[1]
+  -------------------------------------------------------------------
+                         required time                        130.299                           
+                         arrival time                         -16.007                           
+  -------------------------------------------------------------------
+                         slack                                114.292                           
+
+Slack (MET) :             114.330ns  (required time - arrival time)
+  Source:                 <hidden>
+                            (rising edge-triggered cell RAMB18E1 clocked by clk  {rise@0.000ns fall@62.500ns period=125.000ns})
+  Destination:            example_mon/example_mon_fifo_rx/augend_reg[2]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@62.500ns period=125.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            125.000ns  (clk rise@125.000ns - clk rise@0.000ns)
+  Data Path Delay:        10.677ns  (logic 4.247ns (39.779%)  route 6.430ns (60.221%))
+  Logic Levels:           7  (CARRY4=1 LUT2=1 LUT3=2 LUT5=1 LUT6=1 RAMD32=1)
+  Clock Path Skew:        -0.020ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.007ns = ( 130.007 - 125.000 ) 
+    Source Clock Delay      (SCD):    5.292ns
+    Clock Pessimism Removal (CPR):    0.264ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    PBlock               Netlist Resource(s)
+  -------------------------------------------------------------------    ----------------------------------------
+                         (clock clk rise edge)        0.000     0.000 r                       
+    C17                                               0.000     0.000 r                       clk (IN)
+                         net (fo=0)                   0.000     0.000                         clk
+    C17                  IBUF (Prop_ibuf_I_O)         1.308     1.308 r                       example_ibuf/O
+                         net (fo=1, routed)           2.273     3.582                         clk_ibufg
+    BUFGCTRL_X0Y16       BUFGCTRL (Prop_bufgctrl_I0_O)
+                                                      0.096     3.678 r                       example_bufg/O
+                         net (fo=579, routed)         1.614     5.292                         <hidden>
+    RAMB18_X0Y3          RAMB18E1                                     r  SEM_CONTROLLER       <hidden>
+  -------------------------------------------------------------------    ----------------------------------------
+    RAMB18_X0Y3          RAMB18E1 (Prop_ramb18e1_CLKBWRCLK_DOBDO[4])
+                                                      2.454     7.746 r  SEM_CONTROLLER       <hidden>
+                         net (fo=1, routed)           1.012     8.758                         <hidden>
+    SLICE_X9Y8           LUT3 (Prop_lut3_I1_O)        0.152     8.910 r  SEM_CONTROLLER       <hidden>
+                         net (fo=10, routed)          1.384    10.294                         <hidden>
+    SLICE_X6Y7           RAMD32 (Prop_ramd32_RADR0_O)
+                                                      0.332    10.626 f  SEM_CONTROLLER       <hidden>
+                         net (fo=1, routed)           0.656    11.282                         <hidden>
+    SLICE_X7Y7           LUT3 (Prop_lut3_I2_O)        0.154    11.436 f  SEM_CONTROLLER       <hidden>
+                         net (fo=19, routed)          2.303    13.739                         <hidden>
+    SLICE_X6Y13          LUT6 (Prop_lut6_I4_O)        0.327    14.066 r  SEM_CONTROLLER       <hidden>
+                         net (fo=2, routed)           0.483    14.549                         <hidden>
+    SLICE_X6Y13          LUT2 (Prop_lut2_I0_O)        0.124    14.673 r  SEM_CONTROLLER       <hidden>
+                         net (fo=6, routed)           0.591    15.264                         example_mon/example_mon_fifo_rx/monitor_rxread
+    SLICE_X4Y15          LUT5 (Prop_lut5_I1_O)        0.124    15.388 r  SEM_CONTROLLER       example_mon/example_mon_fifo_rx/augend0_carry_i_3__0/O
+                         net (fo=1, routed)           0.000    15.388                         example_mon/example_mon_fifo_rx/augend0_carry_i_3__0_n_0
+    SLICE_X4Y15          CARRY4 (Prop_carry4_S[1]_O[2])
+                                                      0.580    15.968 r  SEM_CONTROLLER       example_mon/example_mon_fifo_rx/augend0_carry/O[2]
+                         net (fo=1, routed)           0.000    15.968                         example_mon/example_mon_fifo_rx/p_0_in__0[2]
+    SLICE_X4Y15          FDRE                                         r  SEM_CONTROLLER       example_mon/example_mon_fifo_rx/augend_reg[2]/D
+  -------------------------------------------------------------------    ----------------------------------------
+
+                         (clock clk rise edge)      125.000   125.000 r                       
+    C17                                               0.000   125.000 r                       clk (IN)
+                         net (fo=0)                   0.000   125.000                         clk
+    C17                  IBUF (Prop_ibuf_I_O)         1.246   126.246 r                       example_ibuf/O
+                         net (fo=1, routed)           2.155   128.401                         clk_ibufg
+    BUFGCTRL_X0Y16       BUFGCTRL (Prop_bufgctrl_I0_O)
+                                                      0.091   128.492 r                       example_bufg/O
+                         net (fo=579, routed)         1.514   130.007                         example_mon/example_mon_fifo_rx/icap_clk
+    SLICE_X4Y15          FDRE                                         r  SEM_CONTROLLER       example_mon/example_mon_fifo_rx/augend_reg[2]/C
+                         clock pessimism              0.264   130.271                           
+                         clock uncertainty           -0.035   130.236                           
+    SLICE_X4Y15          FDRE (Setup_fdre_C_D)        0.062   130.298    SEM_CONTROLLER         example_mon/example_mon_fifo_rx/augend_reg[2]
+  -------------------------------------------------------------------
+                         required time                        130.298                           
+                         arrival time                         -15.968                           
+  -------------------------------------------------------------------
+                         slack                                114.330                           
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.113ns  (arrival time - required time)
+  Source:                 example_mon/example_mon_sipo/delay_line_reg[79]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@62.500ns period=125.000ns})
+  Destination:            example_mon/example_mon_fifo_rx/data_srl_3/D
+                            (rising edge-triggered cell SRLC32E clocked by clk  {rise@0.000ns fall@62.500ns period=125.000ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.280ns  (logic 0.148ns (52.784%)  route 0.132ns (47.216%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.038ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.470ns
+    Source Clock Delay      (SCD):    1.804ns
+    Clock Pessimism Removal (CPR):    0.628ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    PBlock               Netlist Resource(s)
+  -------------------------------------------------------------------    ----------------------------------------
+                         (clock clk rise edge)        0.000     0.000 r                       
+    C17                                               0.000     0.000 r                       clk (IN)
+                         net (fo=0)                   0.000     0.000                         clk
+    C17                  IBUF (Prop_ibuf_I_O)         0.386     0.386 r                       example_ibuf/O
+                         net (fo=1, routed)           0.802     1.187                         clk_ibufg
+    BUFGCTRL_X0Y16       BUFGCTRL (Prop_bufgctrl_I0_O)
+                                                      0.026     1.213 r                       example_bufg/O
+                         net (fo=579, routed)         0.591     1.804                         example_mon/example_mon_sipo/icap_clk
+    SLICE_X6Y14          FDRE                                         r  SEM_CONTROLLER       example_mon/example_mon_sipo/delay_line_reg[79]/C
+  -------------------------------------------------------------------    ----------------------------------------
+    SLICE_X6Y14          FDRE (Prop_fdre_C_Q)         0.148     1.952 r  SEM_CONTROLLER       example_mon/example_mon_sipo/delay_line_reg[79]/Q
+                         net (fo=2, routed)           0.132     2.084                         example_mon/example_mon_fifo_rx/fifo_data_in[3]
+    SLICE_X2Y14          SRLC32E                                      r  SEM_CONTROLLER       example_mon/example_mon_fifo_rx/data_srl_3/D
+  -------------------------------------------------------------------    ----------------------------------------
+
+                         (clock clk rise edge)        0.000     0.000 r                       
+    C17                                               0.000     0.000 r                       clk (IN)
+                         net (fo=0)                   0.000     0.000                         clk
+    C17                  IBUF (Prop_ibuf_I_O)         0.713     0.713 r                       example_ibuf/O
+                         net (fo=1, routed)           0.865     1.578                         clk_ibufg
+    BUFGCTRL_X0Y16       BUFGCTRL (Prop_bufgctrl_I0_O)
+                                                      0.029     1.607 r                       example_bufg/O
+                         net (fo=579, routed)         0.863     2.470                         example_mon/example_mon_fifo_rx/icap_clk
+    SLICE_X2Y14          SRLC32E                                      r  SEM_CONTROLLER       example_mon/example_mon_fifo_rx/data_srl_3/CLK
+                         clock pessimism             -0.628     1.842                           
+    SLICE_X2Y14          SRLC32E (Hold_srlc32e_CLK_D)
+                                                      0.129     1.971    SEM_CONTROLLER         example_mon/example_mon_fifo_rx/data_srl_3
+  -------------------------------------------------------------------
+                         required time                         -1.971                           
+                         arrival time                           2.084                           
+  -------------------------------------------------------------------
+                         slack                                  0.113                           
+
+Slack (MET) :             0.120ns  (arrival time - required time)
+  Source:                 <hidden>
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@62.500ns period=125.000ns})
+  Destination:            <hidden>
+                            (rising edge-triggered cell RAMB18E1 clocked by clk  {rise@0.000ns fall@62.500ns period=125.000ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.381ns  (logic 0.141ns (36.996%)  route 0.240ns (63.004%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.078ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.487ns
+    Source Clock Delay      (SCD):    1.781ns
+    Clock Pessimism Removal (CPR):    0.628ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    PBlock               Netlist Resource(s)
+  -------------------------------------------------------------------    ----------------------------------------
+                         (clock clk rise edge)        0.000     0.000 r                       
+    C17                                               0.000     0.000 r                       clk (IN)
+                         net (fo=0)                   0.000     0.000                         clk
+    C17                  IBUF (Prop_ibuf_I_O)         0.386     0.386 r                       example_ibuf/O
+                         net (fo=1, routed)           0.802     1.187                         clk_ibufg
+    BUFGCTRL_X0Y16       BUFGCTRL (Prop_bufgctrl_I0_O)
+                                                      0.026     1.213 r                       example_bufg/O
+                         net (fo=579, routed)         0.568     1.781                         <hidden>
+    SLICE_X11Y5          FDRE                                         r  SEM_CONTROLLER       <hidden>
+  -------------------------------------------------------------------    ----------------------------------------
+    SLICE_X11Y5          FDRE (Prop_fdre_C_Q)         0.141     1.922 r  SEM_CONTROLLER       <hidden>
+                         net (fo=5, routed)           0.240     2.162                         <hidden>
+    RAMB18_X0Y3          RAMB18E1                                     r  SEM_CONTROLLER       <hidden>
+  -------------------------------------------------------------------    ----------------------------------------
+
+                         (clock clk rise edge)        0.000     0.000 r                       
+    C17                                               0.000     0.000 r                       clk (IN)
+                         net (fo=0)                   0.000     0.000                         clk
+    C17                  IBUF (Prop_ibuf_I_O)         0.713     0.713 r                       example_ibuf/O
+                         net (fo=1, routed)           0.865     1.578                         clk_ibufg
+    BUFGCTRL_X0Y16       BUFGCTRL (Prop_bufgctrl_I0_O)
+                                                      0.029     1.607 r                       example_bufg/O
+                         net (fo=579, routed)         0.880     2.487                         <hidden>
+    RAMB18_X0Y3          RAMB18E1                                     r  SEM_CONTROLLER       <hidden>
+                         clock pessimism             -0.628     1.859                           
+    RAMB18_X0Y3          RAMB18E1 (Hold_ramb18e1_CLKBWRCLK_ADDRBWRADDR[7])
+                                                      0.183     2.042    SEM_CONTROLLER         <hidden>
+  -------------------------------------------------------------------
+                         required time                         -2.042                           
+                         arrival time                           2.162                           
+  -------------------------------------------------------------------
+                         slack                                  0.120                           
+
+Slack (MET) :             0.120ns  (arrival time - required time)
+  Source:                 <hidden>
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@62.500ns period=125.000ns})
+  Destination:            <hidden>
+                            (rising edge-triggered cell RAMB18E1 clocked by clk  {rise@0.000ns fall@62.500ns period=125.000ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.381ns  (logic 0.141ns (36.996%)  route 0.240ns (63.004%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.078ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.487ns
+    Source Clock Delay      (SCD):    1.781ns
+    Clock Pessimism Removal (CPR):    0.628ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    PBlock               Netlist Resource(s)
+  -------------------------------------------------------------------    ----------------------------------------
+                         (clock clk rise edge)        0.000     0.000 r                       
+    C17                                               0.000     0.000 r                       clk (IN)
+                         net (fo=0)                   0.000     0.000                         clk
+    C17                  IBUF (Prop_ibuf_I_O)         0.386     0.386 r                       example_ibuf/O
+                         net (fo=1, routed)           0.802     1.187                         clk_ibufg
+    BUFGCTRL_X0Y16       BUFGCTRL (Prop_bufgctrl_I0_O)
+                                                      0.026     1.213 r                       example_bufg/O
+                         net (fo=579, routed)         0.568     1.781                         <hidden>
+    SLICE_X11Y5          FDRE                                         r  SEM_CONTROLLER       <hidden>
+  -------------------------------------------------------------------    ----------------------------------------
+    SLICE_X11Y5          FDRE (Prop_fdre_C_Q)         0.141     1.922 r  SEM_CONTROLLER       <hidden>
+                         net (fo=5, routed)           0.240     2.162                         <hidden>
+    RAMB18_X0Y2          RAMB18E1                                     r  SEM_CONTROLLER       <hidden>
+  -------------------------------------------------------------------    ----------------------------------------
+
+                         (clock clk rise edge)        0.000     0.000 r                       
+    C17                                               0.000     0.000 r                       clk (IN)
+                         net (fo=0)                   0.000     0.000                         clk
+    C17                  IBUF (Prop_ibuf_I_O)         0.713     0.713 r                       example_ibuf/O
+                         net (fo=1, routed)           0.865     1.578                         clk_ibufg
+    BUFGCTRL_X0Y16       BUFGCTRL (Prop_bufgctrl_I0_O)
+                                                      0.029     1.607 r                       example_bufg/O
+                         net (fo=579, routed)         0.880     2.487                         <hidden>
+    RAMB18_X0Y2          RAMB18E1                                     r  SEM_CONTROLLER       <hidden>
+                         clock pessimism             -0.628     1.859                           
+    RAMB18_X0Y2          RAMB18E1 (Hold_ramb18e1_CLKBWRCLK_ADDRBWRADDR[7])
+                                                      0.183     2.042    SEM_CONTROLLER         <hidden>
+  -------------------------------------------------------------------
+                         required time                         -2.042                           
+                         arrival time                           2.162                           
+  -------------------------------------------------------------------
+                         slack                                  0.120                           
+
+Slack (MET) :             0.122ns  (arrival time - required time)
+  Source:                 example_ext/sync_init_a/C
+                            (rising edge-triggered cell FDSE clocked by clk  {rise@0.000ns fall@62.500ns period=125.000ns})
+  Destination:            example_ext/sync_init_b/D
+                            (rising edge-triggered cell FDSE clocked by clk  {rise@0.000ns fall@62.500ns period=125.000ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.197ns  (logic 0.141ns (71.611%)  route 0.056ns (28.389%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.440ns
+    Source Clock Delay      (SCD):    1.777ns
+    Clock Pessimism Removal (CPR):    0.663ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    PBlock               Netlist Resource(s)
+  -------------------------------------------------------------------    ----------------------------------------
+                         (clock clk rise edge)        0.000     0.000 r                       
+    C17                                               0.000     0.000 r                       clk (IN)
+                         net (fo=0)                   0.000     0.000                         clk
+    C17                  IBUF (Prop_ibuf_I_O)         0.386     0.386 r                       example_ibuf/O
+                         net (fo=1, routed)           0.802     1.187                         clk_ibufg
+    BUFGCTRL_X0Y16       BUFGCTRL (Prop_bufgctrl_I0_O)
+                                                      0.026     1.213 r                       example_bufg/O
+                         net (fo=579, routed)         0.564     1.777                         example_ext/icap_clk
+    SLICE_X11Y14         FDSE                                         r  SEM_CONTROLLER       example_ext/sync_init_a/C
+  -------------------------------------------------------------------    ----------------------------------------
+    SLICE_X11Y14         FDSE (Prop_fdse_C_Q)         0.141     1.918 r  SEM_CONTROLLER       example_ext/sync_init_a/Q
+                         net (fo=1, routed)           0.056     1.974                         example_ext/a_init
+    SLICE_X11Y14         FDSE                                         r  SEM_CONTROLLER       example_ext/sync_init_b/D
+  -------------------------------------------------------------------    ----------------------------------------
+
+                         (clock clk rise edge)        0.000     0.000 r                       
+    C17                                               0.000     0.000 r                       clk (IN)
+                         net (fo=0)                   0.000     0.000                         clk
+    C17                  IBUF (Prop_ibuf_I_O)         0.713     0.713 r                       example_ibuf/O
+                         net (fo=1, routed)           0.865     1.578                         clk_ibufg
+    BUFGCTRL_X0Y16       BUFGCTRL (Prop_bufgctrl_I0_O)
+                                                      0.029     1.607 r                       example_bufg/O
+                         net (fo=579, routed)         0.833     2.440                         example_ext/icap_clk
+    SLICE_X11Y14         FDSE                                         r  SEM_CONTROLLER       example_ext/sync_init_b/C
+                         clock pessimism             -0.663     1.777                           
+    SLICE_X11Y14         FDSE (Hold_fdse_C_D)         0.075     1.852    SEM_CONTROLLER         example_ext/sync_init_b
+  -------------------------------------------------------------------
+                         required time                         -1.852                           
+                         arrival time                           1.974                           
+  -------------------------------------------------------------------
+                         slack                                  0.122                           
+
+Slack (MET) :             0.122ns  (arrival time - required time)
+  Source:                 <hidden>
+                            (rising edge-triggered cell FDPE clocked by clk  {rise@0.000ns fall@62.500ns period=125.000ns})
+  Destination:            <hidden>
+                            (rising edge-triggered cell FDPE clocked by clk  {rise@0.000ns fall@62.500ns period=125.000ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.197ns  (logic 0.141ns (71.611%)  route 0.056ns (28.389%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.444ns
+    Source Clock Delay      (SCD):    1.780ns
+    Clock Pessimism Removal (CPR):    0.664ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    PBlock               Netlist Resource(s)
+  -------------------------------------------------------------------    ----------------------------------------
+                         (clock clk rise edge)        0.000     0.000 r                       
+    C17                                               0.000     0.000 r                       clk (IN)
+                         net (fo=0)                   0.000     0.000                         clk
+    C17                  IBUF (Prop_ibuf_I_O)         0.386     0.386 r                       example_ibuf/O
+                         net (fo=1, routed)           0.802     1.187                         clk_ibufg
+    BUFGCTRL_X0Y16       BUFGCTRL (Prop_bufgctrl_I0_O)
+                                                      0.026     1.213 r                       example_bufg/O
+                         net (fo=579, routed)         0.567     1.780                         <hidden>
+    SLICE_X11Y7          FDPE                                         r  SEM_CONTROLLER       <hidden>
+  -------------------------------------------------------------------    ----------------------------------------
+    SLICE_X11Y7          FDPE (Prop_fdpe_C_Q)         0.141     1.921 r  SEM_CONTROLLER       <hidden>
+                         net (fo=1, routed)           0.056     1.977                         <hidden>
+    SLICE_X11Y7          FDPE                                         r  SEM_CONTROLLER       <hidden>
+  -------------------------------------------------------------------    ----------------------------------------
+
+                         (clock clk rise edge)        0.000     0.000 r                       
+    C17                                               0.000     0.000 r                       clk (IN)
+                         net (fo=0)                   0.000     0.000                         clk
+    C17                  IBUF (Prop_ibuf_I_O)         0.713     0.713 r                       example_ibuf/O
+                         net (fo=1, routed)           0.865     1.578                         clk_ibufg
+    BUFGCTRL_X0Y16       BUFGCTRL (Prop_bufgctrl_I0_O)
+                                                      0.029     1.607 r                       example_bufg/O
+                         net (fo=579, routed)         0.837     2.444                         <hidden>
+    SLICE_X11Y7          FDPE                                         r  SEM_CONTROLLER       <hidden>
+                         clock pessimism             -0.664     1.780                           
+    SLICE_X11Y7          FDPE (Hold_fdpe_C_D)         0.075     1.855    SEM_CONTROLLER         <hidden>
+  -------------------------------------------------------------------
+                         required time                         -1.855                           
+                         arrival time                           1.977                           
+  -------------------------------------------------------------------
+                         slack                                  0.122                           
+
+Slack (MET) :             0.122ns  (arrival time - required time)
+  Source:                 example_mon/example_mon_sipo/sync_reg_a/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@62.500ns period=125.000ns})
+  Destination:            example_mon/example_mon_sipo/sync_reg_b/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@62.500ns period=125.000ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.197ns  (logic 0.141ns (71.611%)  route 0.056ns (28.389%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.459ns
+    Source Clock Delay      (SCD):    1.797ns
+    Clock Pessimism Removal (CPR):    0.662ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    PBlock               Netlist Resource(s)
+  -------------------------------------------------------------------    ----------------------------------------
+                         (clock clk rise edge)        0.000     0.000 r                       
+    C17                                               0.000     0.000 r                       clk (IN)
+                         net (fo=0)                   0.000     0.000                         clk
+    C17                  IBUF (Prop_ibuf_I_O)         0.386     0.386 r                       example_ibuf/O
+                         net (fo=1, routed)           0.802     1.187                         clk_ibufg
+    BUFGCTRL_X0Y16       BUFGCTRL (Prop_bufgctrl_I0_O)
+                                                      0.026     1.213 r                       example_bufg/O
+                         net (fo=579, routed)         0.584     1.797                         example_mon/example_mon_sipo/icap_clk
+    SLICE_X1Y24          FDRE                                         r  SEM_CONTROLLER       example_mon/example_mon_sipo/sync_reg_a/C
+  -------------------------------------------------------------------    ----------------------------------------
+    SLICE_X1Y24          FDRE (Prop_fdre_C_Q)         0.141     1.938 r  SEM_CONTROLLER       example_mon/example_mon_sipo/sync_reg_a/Q
+                         net (fo=1, routed)           0.056     1.994                         example_mon/example_mon_sipo/sync_serial_a
+    SLICE_X1Y24          FDRE                                         r  SEM_CONTROLLER       example_mon/example_mon_sipo/sync_reg_b/D
+  -------------------------------------------------------------------    ----------------------------------------
+
+                         (clock clk rise edge)        0.000     0.000 r                       
+    C17                                               0.000     0.000 r                       clk (IN)
+                         net (fo=0)                   0.000     0.000                         clk
+    C17                  IBUF (Prop_ibuf_I_O)         0.713     0.713 r                       example_ibuf/O
+                         net (fo=1, routed)           0.865     1.578                         clk_ibufg
+    BUFGCTRL_X0Y16       BUFGCTRL (Prop_bufgctrl_I0_O)
+                                                      0.029     1.607 r                       example_bufg/O
+                         net (fo=579, routed)         0.852     2.459                         example_mon/example_mon_sipo/icap_clk
+    SLICE_X1Y24          FDRE                                         r  SEM_CONTROLLER       example_mon/example_mon_sipo/sync_reg_b/C
+                         clock pessimism             -0.662     1.797                           
+    SLICE_X1Y24          FDRE (Hold_fdre_C_D)         0.075     1.872    SEM_CONTROLLER         example_mon/example_mon_sipo/sync_reg_b
+  -------------------------------------------------------------------
+                         required time                         -1.872                           
+                         arrival time                           1.994                           
+  -------------------------------------------------------------------
+                         slack                                  0.122                           
+
+Slack (MET) :             0.130ns  (arrival time - required time)
+  Source:                 <hidden>
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@62.500ns period=125.000ns})
+  Destination:            <hidden>
+                            (rising edge-triggered cell RAMS32 clocked by clk  {rise@0.000ns fall@62.500ns period=125.000ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.290ns  (logic 0.141ns (48.661%)  route 0.149ns (51.339%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.036ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.445ns
+    Source Clock Delay      (SCD):    1.781ns
+    Clock Pessimism Removal (CPR):    0.628ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    PBlock               Netlist Resource(s)
+  -------------------------------------------------------------------    ----------------------------------------
+                         (clock clk rise edge)        0.000     0.000 r                       
+    C17                                               0.000     0.000 r                       clk (IN)
+                         net (fo=0)                   0.000     0.000                         clk
+    C17                  IBUF (Prop_ibuf_I_O)         0.386     0.386 r                       example_ibuf/O
+                         net (fo=1, routed)           0.802     1.187                         clk_ibufg
+    BUFGCTRL_X0Y16       BUFGCTRL (Prop_bufgctrl_I0_O)
+                                                      0.026     1.213 r                       example_bufg/O
+                         net (fo=579, routed)         0.568     1.781                         <hidden>
+    SLICE_X9Y4           FDRE                                         r  SEM_CONTROLLER       <hidden>
+  -------------------------------------------------------------------    ----------------------------------------
+    SLICE_X9Y4           FDRE (Prop_fdre_C_Q)         0.141     1.922 r  SEM_CONTROLLER       <hidden>
+                         net (fo=5, routed)           0.149     2.071                         <hidden>
+    SLICE_X10Y5          RAMS32                                       r  SEM_CONTROLLER       <hidden>
+  -------------------------------------------------------------------    ----------------------------------------
+
+                         (clock clk rise edge)        0.000     0.000 r                       
+    C17                                               0.000     0.000 r                       clk (IN)
+                         net (fo=0)                   0.000     0.000                         clk
+    C17                  IBUF (Prop_ibuf_I_O)         0.713     0.713 r                       example_ibuf/O
+                         net (fo=1, routed)           0.865     1.578                         clk_ibufg
+    BUFGCTRL_X0Y16       BUFGCTRL (Prop_bufgctrl_I0_O)
+                                                      0.029     1.607 r                       example_bufg/O
+                         net (fo=579, routed)         0.838     2.445                         <hidden>
+    SLICE_X10Y5          RAMS32                                       r  SEM_CONTROLLER       <hidden>
+                         clock pessimism             -0.628     1.817                           
+    SLICE_X10Y5          RAMS32 (Hold_rams32_CLK_I)
+                                                      0.124     1.941    SEM_CONTROLLER         <hidden>
+  -------------------------------------------------------------------
+                         required time                         -1.941                           
+                         arrival time                           2.071                           
+  -------------------------------------------------------------------
+                         slack                                  0.130                           
+
+Slack (MET) :             0.131ns  (arrival time - required time)
+  Source:                 example_mon/example_mon_piso/piso_out_reg/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@62.500ns period=125.000ns})
+  Destination:            example_mon/example_mon_piso/pipeline_serial/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@62.500ns period=125.000ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.206ns  (logic 0.141ns (68.336%)  route 0.065ns (31.664%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.469ns
+    Source Clock Delay      (SCD):    1.805ns
+    Clock Pessimism Removal (CPR):    0.664ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    PBlock               Netlist Resource(s)
+  -------------------------------------------------------------------    ----------------------------------------
+                         (clock clk rise edge)        0.000     0.000 r                       
+    C17                                               0.000     0.000 r                       clk (IN)
+                         net (fo=0)                   0.000     0.000                         clk
+    C17                  IBUF (Prop_ibuf_I_O)         0.386     0.386 r                       example_ibuf/O
+                         net (fo=1, routed)           0.802     1.187                         clk_ibufg
+    BUFGCTRL_X0Y16       BUFGCTRL (Prop_bufgctrl_I0_O)
+                                                      0.026     1.213 r                       example_bufg/O
+                         net (fo=579, routed)         0.592     1.805                         example_mon/example_mon_piso/icap_clk
+    SLICE_X4Y12          FDRE                                         r  SEM_CONTROLLER       example_mon/example_mon_piso/piso_out_reg/C
+  -------------------------------------------------------------------    ----------------------------------------
+    SLICE_X4Y12          FDRE (Prop_fdre_C_Q)         0.141     1.946 r  SEM_CONTROLLER       example_mon/example_mon_piso/piso_out_reg/Q
+                         net (fo=1, routed)           0.065     2.011                         example_mon/example_mon_piso/piso_out
+    SLICE_X4Y12          FDRE                                         r  SEM_CONTROLLER       example_mon/example_mon_piso/pipeline_serial/D
+  -------------------------------------------------------------------    ----------------------------------------
+
+                         (clock clk rise edge)        0.000     0.000 r                       
+    C17                                               0.000     0.000 r                       clk (IN)
+                         net (fo=0)                   0.000     0.000                         clk
+    C17                  IBUF (Prop_ibuf_I_O)         0.713     0.713 r                       example_ibuf/O
+                         net (fo=1, routed)           0.865     1.578                         clk_ibufg
+    BUFGCTRL_X0Y16       BUFGCTRL (Prop_bufgctrl_I0_O)
+                                                      0.029     1.607 r                       example_bufg/O
+                         net (fo=579, routed)         0.862     2.469                         example_mon/example_mon_piso/icap_clk
+    SLICE_X4Y12          FDRE                                         r  SEM_CONTROLLER       example_mon/example_mon_piso/pipeline_serial/C
+                         clock pessimism             -0.664     1.805                           
+    SLICE_X4Y12          FDRE (Hold_fdre_C_D)         0.075     1.880    SEM_CONTROLLER         example_mon/example_mon_piso/pipeline_serial
+  -------------------------------------------------------------------
+                         required time                         -1.880                           
+                         arrival time                           2.011                           
+  -------------------------------------------------------------------
+                         slack                                  0.131                           
+
+Slack (MET) :             0.144ns  (arrival time - required time)
+  Source:                 example_ext/example_ext_byte/q_del_reg[2]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@62.500ns period=125.000ns})
+  Destination:            example_ext/rx_mbox_src_data_reg[2]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@62.500ns period=125.000ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.204ns  (logic 0.141ns (69.074%)  route 0.063ns (30.926%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.468ns
+    Source Clock Delay      (SCD):    1.805ns
+    Clock Pessimism Removal (CPR):    0.650ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    PBlock               Netlist Resource(s)
+  -------------------------------------------------------------------    ----------------------------------------
+                         (clock clk rise edge)        0.000     0.000 r                       
+    C17                                               0.000     0.000 r                       clk (IN)
+                         net (fo=0)                   0.000     0.000                         clk
+    C17                  IBUF (Prop_ibuf_I_O)         0.386     0.386 r                       example_ibuf/O
+                         net (fo=1, routed)           0.802     1.187                         clk_ibufg
+    BUFGCTRL_X0Y16       BUFGCTRL (Prop_bufgctrl_I0_O)
+                                                      0.026     1.213 r                       example_bufg/O
+                         net (fo=579, routed)         0.592     1.805                         example_ext/example_ext_byte/icap_clk
+    SLICE_X0Y16          FDRE                                         r  SEM_CONTROLLER       example_ext/example_ext_byte/q_del_reg[2]/C
+  -------------------------------------------------------------------    ----------------------------------------
+    SLICE_X0Y16          FDRE (Prop_fdre_C_Q)         0.141     1.946 r  SEM_CONTROLLER       example_ext/example_ext_byte/q_del_reg[2]/Q
+                         net (fo=2, routed)           0.063     2.009                         example_ext/rx[2]
+    SLICE_X1Y16          FDRE                                         r  SEM_CONTROLLER       example_ext/rx_mbox_src_data_reg[2]/D
+  -------------------------------------------------------------------    ----------------------------------------
+
+                         (clock clk rise edge)        0.000     0.000 r                       
+    C17                                               0.000     0.000 r                       clk (IN)
+                         net (fo=0)                   0.000     0.000                         clk
+    C17                  IBUF (Prop_ibuf_I_O)         0.713     0.713 r                       example_ibuf/O
+                         net (fo=1, routed)           0.865     1.578                         clk_ibufg
+    BUFGCTRL_X0Y16       BUFGCTRL (Prop_bufgctrl_I0_O)
+                                                      0.029     1.607 r                       example_bufg/O
+                         net (fo=579, routed)         0.861     2.468                         example_ext/icap_clk
+    SLICE_X1Y16          FDRE                                         r  SEM_CONTROLLER       example_ext/rx_mbox_src_data_reg[2]/C
+                         clock pessimism             -0.650     1.818                           
+    SLICE_X1Y16          FDRE (Hold_fdre_C_D)         0.047     1.865    SEM_CONTROLLER         example_ext/rx_mbox_src_data_reg[2]
+  -------------------------------------------------------------------
+                         required time                         -1.865                           
+                         arrival time                           2.009                           
+  -------------------------------------------------------------------
+                         slack                                  0.144                           
+
+Slack (MET) :             0.146ns  (arrival time - required time)
+  Source:                 <hidden>
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@62.500ns period=125.000ns})
+  Destination:            <hidden>
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@62.500ns period=125.000ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.256ns  (logic 0.141ns (55.083%)  route 0.115ns (44.917%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.034ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.433ns
+    Source Clock Delay      (SCD):    1.771ns
+    Clock Pessimism Removal (CPR):    0.628ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    PBlock               Netlist Resource(s)
+  -------------------------------------------------------------------    ----------------------------------------
+                         (clock clk rise edge)        0.000     0.000 r                       
+    C17                                               0.000     0.000 r                       clk (IN)
+                         net (fo=0)                   0.000     0.000                         clk
+    C17                  IBUF (Prop_ibuf_I_O)         0.386     0.386 r                       example_ibuf/O
+                         net (fo=1, routed)           0.802     1.187                         clk_ibufg
+    BUFGCTRL_X0Y16       BUFGCTRL (Prop_bufgctrl_I0_O)
+                                                      0.026     1.213 r                       example_bufg/O
+                         net (fo=579, routed)         0.558     1.771                         <hidden>
+    SLICE_X28Y18         FDRE                                         r  SEM_CONTROLLER       <hidden>
+  -------------------------------------------------------------------    ----------------------------------------
+    SLICE_X28Y18         FDRE (Prop_fdre_C_Q)         0.141     1.912 r  SEM_CONTROLLER       <hidden>
+                         net (fo=1, routed)           0.115     2.027                         <hidden>
+    SLICE_X30Y17         FDRE                                         r  SEM_CONTROLLER       <hidden>
+  -------------------------------------------------------------------    ----------------------------------------
+
+                         (clock clk rise edge)        0.000     0.000 r                       
+    C17                                               0.000     0.000 r                       clk (IN)
+                         net (fo=0)                   0.000     0.000                         clk
+    C17                  IBUF (Prop_ibuf_I_O)         0.713     0.713 r                       example_ibuf/O
+                         net (fo=1, routed)           0.865     1.578                         clk_ibufg
+    BUFGCTRL_X0Y16       BUFGCTRL (Prop_bufgctrl_I0_O)
+                                                      0.029     1.607 r                       example_bufg/O
+                         net (fo=579, routed)         0.826     2.433                         <hidden>
+    SLICE_X30Y17         FDRE                                         r  SEM_CONTROLLER       <hidden>
+                         clock pessimism             -0.628     1.805                           
+    SLICE_X30Y17         FDRE (Hold_fdre_C_D)         0.076     1.881    SEM_CONTROLLER         <hidden>
+  -------------------------------------------------------------------
+                         required time                         -1.881                           
+                         arrival time                           2.027                           
+  -------------------------------------------------------------------
+                         slack                                  0.146                           
+
+
+
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         clk
+Waveform(ns):       { 0.000 62.500 }
+Period(ns):         125.000
+Sources:            { clk }
+
+Check Type        Corner  Lib Pin             Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location        Pin
+Min Period        n/a     ICAPE2/CLK          n/a            10.000        125.000     115.000    ICAP_X0Y1       example_cfg/example_icap/CLK
+Min Period        n/a     RAMB18E1/CLKARDCLK  n/a            2.944         125.000     122.056    RAMB18_X0Y6     <hidden>
+Min Period        n/a     RAMB18E1/CLKBWRCLK  n/a            2.944         125.000     122.056    RAMB18_X0Y6     <hidden>
+Min Period        n/a     RAMB18E1/CLKARDCLK  n/a            2.576         125.000     122.424    RAMB18_X0Y3     <hidden>
+Min Period        n/a     RAMB18E1/CLKBWRCLK  n/a            2.576         125.000     122.424    RAMB18_X0Y3     <hidden>
+Min Period        n/a     RAMB18E1/CLKARDCLK  n/a            2.576         125.000     122.424    RAMB18_X0Y2     <hidden>
+Min Period        n/a     RAMB18E1/CLKBWRCLK  n/a            2.576         125.000     122.424    RAMB18_X0Y2     <hidden>
+Min Period        n/a     BUFGCTRL/I0         n/a            2.155         125.000     122.845    BUFGCTRL_X0Y16  example_bufg/I0
+Min Period        n/a     FDSE/C              n/a            1.474         125.000     123.526    OLOGIC_X1Y17    example_ext/ext_s_ofd/C
+Min Period        n/a     FDRE/C              n/a            1.474         125.000     123.526    OLOGIC_X1Y11    example_ext/example_ext_byte/ext_c_ofd/C
+Low Pulse Width   Slow    RAMS64E/CLK         n/a            1.250         62.500      61.250     SLICE_X8Y10     <hidden>
+Low Pulse Width   Fast    RAMS64E/CLK         n/a            1.250         62.500      61.250     SLICE_X8Y10     <hidden>
+Low Pulse Width   Slow    RAMS64E/CLK         n/a            1.250         62.500      61.250     SLICE_X8Y10     <hidden>
+Low Pulse Width   Fast    RAMS64E/CLK         n/a            1.250         62.500      61.250     SLICE_X8Y10     <hidden>
+Low Pulse Width   Slow    RAMS64E/CLK         n/a            1.250         62.500      61.250     SLICE_X8Y10     <hidden>
+Low Pulse Width   Fast    RAMS64E/CLK         n/a            1.250         62.500      61.250     SLICE_X8Y10     <hidden>
+Low Pulse Width   Slow    RAMS64E/CLK         n/a            1.250         62.500      61.250     SLICE_X8Y10     <hidden>
+Low Pulse Width   Fast    RAMS64E/CLK         n/a            1.250         62.500      61.250     SLICE_X8Y10     <hidden>
+Low Pulse Width   Slow    RAMS64E/CLK         n/a            1.250         62.500      61.250     SLICE_X10Y10    <hidden>
+Low Pulse Width   Fast    RAMS64E/CLK         n/a            1.250         62.500      61.250     SLICE_X10Y10    <hidden>
+High Pulse Width  Slow    RAMS64E/CLK         n/a            1.250         62.500      61.250     SLICE_X8Y10     <hidden>
+High Pulse Width  Fast    RAMS64E/CLK         n/a            1.250         62.500      61.250     SLICE_X8Y10     <hidden>
+High Pulse Width  Slow    RAMS64E/CLK         n/a            1.250         62.500      61.250     SLICE_X8Y10     <hidden>
+High Pulse Width  Fast    RAMS64E/CLK         n/a            1.250         62.500      61.250     SLICE_X8Y10     <hidden>
+High Pulse Width  Slow    RAMS64E/CLK         n/a            1.250         62.500      61.250     SLICE_X8Y10     <hidden>
+High Pulse Width  Fast    RAMS64E/CLK         n/a            1.250         62.500      61.250     SLICE_X8Y10     <hidden>
+High Pulse Width  Slow    RAMS64E/CLK         n/a            1.250         62.500      61.250     SLICE_X8Y10     <hidden>
+High Pulse Width  Fast    RAMS64E/CLK         n/a            1.250         62.500      61.250     SLICE_X8Y10     <hidden>
+High Pulse Width  Slow    RAMS64E/CLK         n/a            1.250         62.500      61.250     SLICE_X10Y10    <hidden>
+High Pulse Width  Fast    RAMS64E/CLK         n/a            1.250         62.500      61.250     SLICE_X10Y10    <hidden>
+
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  
+  To Clock:  clk
+
+Setup :            0  Failing Endpoints,  Worst Slack      114.866ns,  Total Violation        0.000ns
+Hold  :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             114.866ns  (required time - arrival time)
+  Source:                 example_cfg/example_frame_ecc/SYNDROMEVALID
+                            (internal pin)
+  Destination:            <hidden>
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@62.500ns period=125.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            124.000ns  (MaxDelay Path 124.000ns)
+  Data Path Delay:        8.929ns  (logic 0.124ns (1.389%)  route 8.805ns (98.611%))
+  Logic Levels:           1  (LUT3=1)
+  Timing Exception:       MaxDelay Path 124.000ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    PBlock               Netlist Resource(s)
+  -------------------------------------------------------------------    ----------------------------------------
+    FRAME_ECC_X0Y0       FRAME_ECCE2                  0.000     0.000 r                       example_cfg/example_frame_ecc/SYNDROMEVALID
+                         net (fo=54, routed)          7.026     7.026                         <hidden>
+    SLICE_X6Y19          LUT3 (Prop_lut3_I2_O)        0.124     7.150 r  SEM_CONTROLLER       <hidden>
+                         net (fo=69, routed)          1.779     8.929                         <hidden>
+    SLICE_X28Y17         FDRE                                         r  SEM_CONTROLLER       <hidden>
+  -------------------------------------------------------------------    ----------------------------------------
+
+                         max delay                  124.000   124.000                         
+    SLICE_X28Y17         FDRE (Setup_fdre_C_CE)      -0.205   123.795    SEM_CONTROLLER         <hidden>
+  -------------------------------------------------------------------
+                         required time                        123.795                           
+                         arrival time                          -8.929                           
+  -------------------------------------------------------------------
+                         slack                                114.866                           
+
+Slack (MET) :             114.866ns  (required time - arrival time)
+  Source:                 example_cfg/example_frame_ecc/SYNDROMEVALID
+                            (internal pin)
+  Destination:            <hidden>
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@62.500ns period=125.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            124.000ns  (MaxDelay Path 124.000ns)
+  Data Path Delay:        8.929ns  (logic 0.124ns (1.389%)  route 8.805ns (98.611%))
+  Logic Levels:           1  (LUT3=1)
+  Timing Exception:       MaxDelay Path 124.000ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    PBlock               Netlist Resource(s)
+  -------------------------------------------------------------------    ----------------------------------------
+    FRAME_ECC_X0Y0       FRAME_ECCE2                  0.000     0.000 r                       example_cfg/example_frame_ecc/SYNDROMEVALID
+                         net (fo=54, routed)          7.026     7.026                         <hidden>
+    SLICE_X6Y19          LUT3 (Prop_lut3_I2_O)        0.124     7.150 r  SEM_CONTROLLER       <hidden>
+                         net (fo=69, routed)          1.779     8.929                         <hidden>
+    SLICE_X28Y17         FDRE                                         r  SEM_CONTROLLER       <hidden>
+  -------------------------------------------------------------------    ----------------------------------------
+
+                         max delay                  124.000   124.000                         
+    SLICE_X28Y17         FDRE (Setup_fdre_C_CE)      -0.205   123.795    SEM_CONTROLLER         <hidden>
+  -------------------------------------------------------------------
+                         required time                        123.795                           
+                         arrival time                          -8.929                           
+  -------------------------------------------------------------------
+                         slack                                114.866                           
+
+Slack (MET) :             114.866ns  (required time - arrival time)
+  Source:                 example_cfg/example_frame_ecc/SYNDROMEVALID
+                            (internal pin)
+  Destination:            <hidden>
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@62.500ns period=125.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            124.000ns  (MaxDelay Path 124.000ns)
+  Data Path Delay:        8.929ns  (logic 0.124ns (1.389%)  route 8.805ns (98.611%))
+  Logic Levels:           1  (LUT3=1)
+  Timing Exception:       MaxDelay Path 124.000ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    PBlock               Netlist Resource(s)
+  -------------------------------------------------------------------    ----------------------------------------
+    FRAME_ECC_X0Y0       FRAME_ECCE2                  0.000     0.000 r                       example_cfg/example_frame_ecc/SYNDROMEVALID
+                         net (fo=54, routed)          7.026     7.026                         <hidden>
+    SLICE_X6Y19          LUT3 (Prop_lut3_I2_O)        0.124     7.150 r  SEM_CONTROLLER       <hidden>
+                         net (fo=69, routed)          1.779     8.929                         <hidden>
+    SLICE_X28Y17         FDRE                                         r  SEM_CONTROLLER       <hidden>
+  -------------------------------------------------------------------    ----------------------------------------
+
+                         max delay                  124.000   124.000                         
+    SLICE_X28Y17         FDRE (Setup_fdre_C_CE)      -0.205   123.795    SEM_CONTROLLER         <hidden>
+  -------------------------------------------------------------------
+                         required time                        123.795                           
+                         arrival time                          -8.929                           
+  -------------------------------------------------------------------
+                         slack                                114.866                           
+
+Slack (MET) :             114.866ns  (required time - arrival time)
+  Source:                 example_cfg/example_frame_ecc/SYNDROMEVALID
+                            (internal pin)
+  Destination:            <hidden>
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@62.500ns period=125.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            124.000ns  (MaxDelay Path 124.000ns)
+  Data Path Delay:        8.929ns  (logic 0.124ns (1.389%)  route 8.805ns (98.611%))
+  Logic Levels:           1  (LUT3=1)
+  Timing Exception:       MaxDelay Path 124.000ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    PBlock               Netlist Resource(s)
+  -------------------------------------------------------------------    ----------------------------------------
+    FRAME_ECC_X0Y0       FRAME_ECCE2                  0.000     0.000 r                       example_cfg/example_frame_ecc/SYNDROMEVALID
+                         net (fo=54, routed)          7.026     7.026                         <hidden>
+    SLICE_X6Y19          LUT3 (Prop_lut3_I2_O)        0.124     7.150 r  SEM_CONTROLLER       <hidden>
+                         net (fo=69, routed)          1.779     8.929                         <hidden>
+    SLICE_X28Y17         FDRE                                         r  SEM_CONTROLLER       <hidden>
+  -------------------------------------------------------------------    ----------------------------------------
+
+                         max delay                  124.000   124.000                         
+    SLICE_X28Y17         FDRE (Setup_fdre_C_CE)      -0.205   123.795    SEM_CONTROLLER         <hidden>
+  -------------------------------------------------------------------
+                         required time                        123.795                           
+                         arrival time                          -8.929                           
+  -------------------------------------------------------------------
+                         slack                                114.866                           
+
+Slack (MET) :             114.866ns  (required time - arrival time)
+  Source:                 example_cfg/example_frame_ecc/SYNDROMEVALID
+                            (internal pin)
+  Destination:            <hidden>
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@62.500ns period=125.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            124.000ns  (MaxDelay Path 124.000ns)
+  Data Path Delay:        8.929ns  (logic 0.124ns (1.389%)  route 8.805ns (98.611%))
+  Logic Levels:           1  (LUT3=1)
+  Timing Exception:       MaxDelay Path 124.000ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    PBlock               Netlist Resource(s)
+  -------------------------------------------------------------------    ----------------------------------------
+    FRAME_ECC_X0Y0       FRAME_ECCE2                  0.000     0.000 r                       example_cfg/example_frame_ecc/SYNDROMEVALID
+                         net (fo=54, routed)          7.026     7.026                         <hidden>
+    SLICE_X6Y19          LUT3 (Prop_lut3_I2_O)        0.124     7.150 r  SEM_CONTROLLER       <hidden>
+                         net (fo=69, routed)          1.779     8.929                         <hidden>
+    SLICE_X28Y17         FDRE                                         r  SEM_CONTROLLER       <hidden>
+  -------------------------------------------------------------------    ----------------------------------------
+
+                         max delay                  124.000   124.000                         
+    SLICE_X28Y17         FDRE (Setup_fdre_C_CE)      -0.205   123.795    SEM_CONTROLLER         <hidden>
+  -------------------------------------------------------------------
+                         required time                        123.795                           
+                         arrival time                          -8.929                           
+  -------------------------------------------------------------------
+                         slack                                114.866                           
+
+Slack (MET) :             115.009ns  (required time - arrival time)
+  Source:                 example_cfg/example_frame_ecc/SYNDROMEVALID
+                            (internal pin)
+  Destination:            <hidden>
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@62.500ns period=125.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            124.000ns  (MaxDelay Path 124.000ns)
+  Data Path Delay:        8.786ns  (logic 0.124ns (1.411%)  route 8.662ns (98.589%))
+  Logic Levels:           1  (LUT3=1)
+  Timing Exception:       MaxDelay Path 124.000ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    PBlock               Netlist Resource(s)
+  -------------------------------------------------------------------    ----------------------------------------
+    FRAME_ECC_X0Y0       FRAME_ECCE2                  0.000     0.000 r                       example_cfg/example_frame_ecc/SYNDROMEVALID
+                         net (fo=54, routed)          7.026     7.026                         <hidden>
+    SLICE_X6Y19          LUT3 (Prop_lut3_I2_O)        0.124     7.150 r  SEM_CONTROLLER       <hidden>
+                         net (fo=69, routed)          1.636     8.786                         <hidden>
+    SLICE_X29Y19         FDRE                                         r  SEM_CONTROLLER       <hidden>
+  -------------------------------------------------------------------    ----------------------------------------
+
+                         max delay                  124.000   124.000                         
+    SLICE_X29Y19         FDRE (Setup_fdre_C_CE)      -0.205   123.795    SEM_CONTROLLER         <hidden>
+  -------------------------------------------------------------------
+                         required time                        123.795                           
+                         arrival time                          -8.786                           
+  -------------------------------------------------------------------
+                         slack                                115.009                           
+
+Slack (MET) :             115.009ns  (required time - arrival time)
+  Source:                 example_cfg/example_frame_ecc/SYNDROMEVALID
+                            (internal pin)
+  Destination:            <hidden>
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@62.500ns period=125.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            124.000ns  (MaxDelay Path 124.000ns)
+  Data Path Delay:        8.786ns  (logic 0.124ns (1.411%)  route 8.662ns (98.589%))
+  Logic Levels:           1  (LUT3=1)
+  Timing Exception:       MaxDelay Path 124.000ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    PBlock               Netlist Resource(s)
+  -------------------------------------------------------------------    ----------------------------------------
+    FRAME_ECC_X0Y0       FRAME_ECCE2                  0.000     0.000 r                       example_cfg/example_frame_ecc/SYNDROMEVALID
+                         net (fo=54, routed)          7.026     7.026                         <hidden>
+    SLICE_X6Y19          LUT3 (Prop_lut3_I2_O)        0.124     7.150 r  SEM_CONTROLLER       <hidden>
+                         net (fo=69, routed)          1.636     8.786                         <hidden>
+    SLICE_X29Y19         FDRE                                         r  SEM_CONTROLLER       <hidden>
+  -------------------------------------------------------------------    ----------------------------------------
+
+                         max delay                  124.000   124.000                         
+    SLICE_X29Y19         FDRE (Setup_fdre_C_CE)      -0.205   123.795    SEM_CONTROLLER         <hidden>
+  -------------------------------------------------------------------
+                         required time                        123.795                           
+                         arrival time                          -8.786                           
+  -------------------------------------------------------------------
+                         slack                                115.009                           
+
+Slack (MET) :             115.009ns  (required time - arrival time)
+  Source:                 example_cfg/example_frame_ecc/SYNDROMEVALID
+                            (internal pin)
+  Destination:            <hidden>
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@62.500ns period=125.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            124.000ns  (MaxDelay Path 124.000ns)
+  Data Path Delay:        8.786ns  (logic 0.124ns (1.411%)  route 8.662ns (98.589%))
+  Logic Levels:           1  (LUT3=1)
+  Timing Exception:       MaxDelay Path 124.000ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    PBlock               Netlist Resource(s)
+  -------------------------------------------------------------------    ----------------------------------------
+    FRAME_ECC_X0Y0       FRAME_ECCE2                  0.000     0.000 r                       example_cfg/example_frame_ecc/SYNDROMEVALID
+                         net (fo=54, routed)          7.026     7.026                         <hidden>
+    SLICE_X6Y19          LUT3 (Prop_lut3_I2_O)        0.124     7.150 r  SEM_CONTROLLER       <hidden>
+                         net (fo=69, routed)          1.636     8.786                         <hidden>
+    SLICE_X29Y19         FDRE                                         r  SEM_CONTROLLER       <hidden>
+  -------------------------------------------------------------------    ----------------------------------------
+
+                         max delay                  124.000   124.000                         
+    SLICE_X29Y19         FDRE (Setup_fdre_C_CE)      -0.205   123.795    SEM_CONTROLLER         <hidden>
+  -------------------------------------------------------------------
+                         required time                        123.795                           
+                         arrival time                          -8.786                           
+  -------------------------------------------------------------------
+                         slack                                115.009                           
+
+Slack (MET) :             115.009ns  (required time - arrival time)
+  Source:                 example_cfg/example_frame_ecc/SYNDROMEVALID
+                            (internal pin)
+  Destination:            <hidden>
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@62.500ns period=125.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            124.000ns  (MaxDelay Path 124.000ns)
+  Data Path Delay:        8.786ns  (logic 0.124ns (1.411%)  route 8.662ns (98.589%))
+  Logic Levels:           1  (LUT3=1)
+  Timing Exception:       MaxDelay Path 124.000ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    PBlock               Netlist Resource(s)
+  -------------------------------------------------------------------    ----------------------------------------
+    FRAME_ECC_X0Y0       FRAME_ECCE2                  0.000     0.000 r                       example_cfg/example_frame_ecc/SYNDROMEVALID
+                         net (fo=54, routed)          7.026     7.026                         <hidden>
+    SLICE_X6Y19          LUT3 (Prop_lut3_I2_O)        0.124     7.150 r  SEM_CONTROLLER       <hidden>
+                         net (fo=69, routed)          1.636     8.786                         <hidden>
+    SLICE_X29Y19         FDRE                                         r  SEM_CONTROLLER       <hidden>
+  -------------------------------------------------------------------    ----------------------------------------
+
+                         max delay                  124.000   124.000                         
+    SLICE_X29Y19         FDRE (Setup_fdre_C_CE)      -0.205   123.795    SEM_CONTROLLER         <hidden>
+  -------------------------------------------------------------------
+                         required time                        123.795                           
+                         arrival time                          -8.786                           
+  -------------------------------------------------------------------
+                         slack                                115.009                           
+
+Slack (MET) :             115.009ns  (required time - arrival time)
+  Source:                 example_cfg/example_frame_ecc/SYNDROMEVALID
+                            (internal pin)
+  Destination:            <hidden>
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@62.500ns period=125.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            124.000ns  (MaxDelay Path 124.000ns)
+  Data Path Delay:        8.786ns  (logic 0.124ns (1.411%)  route 8.662ns (98.589%))
+  Logic Levels:           1  (LUT3=1)
+  Timing Exception:       MaxDelay Path 124.000ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    PBlock               Netlist Resource(s)
+  -------------------------------------------------------------------    ----------------------------------------
+    FRAME_ECC_X0Y0       FRAME_ECCE2                  0.000     0.000 r                       example_cfg/example_frame_ecc/SYNDROMEVALID
+                         net (fo=54, routed)          7.026     7.026                         <hidden>
+    SLICE_X6Y19          LUT3 (Prop_lut3_I2_O)        0.124     7.150 r  SEM_CONTROLLER       <hidden>
+                         net (fo=69, routed)          1.636     8.786                         <hidden>
+    SLICE_X29Y19         FDRE                                         r  SEM_CONTROLLER       <hidden>
+  -------------------------------------------------------------------    ----------------------------------------
+
+                         max delay                  124.000   124.000                         
+    SLICE_X29Y19         FDRE (Setup_fdre_C_CE)      -0.205   123.795    SEM_CONTROLLER         <hidden>
+  -------------------------------------------------------------------
+                         required time                        123.795                           
+                         arrival time                          -8.786                           
+  -------------------------------------------------------------------
+                         slack                                115.009                           
+
+
+
+
+
+--------------------------------------------------------------------------------------
+Path Group:  (none)
+From Clock:  
+  To Clock:  clk
+
+Max Delay             0 Endpoints
+Min Delay           201 Endpoints
+--------------------------------------------------------------------------------------
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 example_cfg/example_frame_ecc/SYNDROME[1]
+                            (internal pin)
+  Destination:            <hidden>
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@62.500ns period=125.000ns})
+  Path Group:             (none)
+  Path Type:              Hold (Min at Fast Process Corner)
+  Data Path Delay:        4.868ns  (logic 0.000ns (0.000%)  route 4.868ns (100.000%))
+  Logic Levels:           0  
+  Clock Uncertainty:      0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+  Timing Exception:       False Path
+
+    Location             Delay type                Incr(ns)  Path(ns)    PBlock               Netlist Resource(s)
+  -------------------------------------------------------------------    ----------------------------------------
+    FRAME_ECC_X0Y0       FRAME_ECCE2                  0.000     0.000 r                       example_cfg/example_frame_ecc/SYNDROME[1]
+                         net (fo=1, routed)           4.868     4.868                         <hidden>
+    SLICE_X29Y21         FDRE                                         r  SEM_CONTROLLER       <hidden>
+  -------------------------------------------------------------------    ----------------------------------------
+
+                         (clock clk rise edge)        0.000     0.000 r                       
+    C17                                               0.000     0.000 r                       clk (IN)
+                         net (fo=0)                   0.000     0.000                         clk
+    C17                  IBUF (Prop_ibuf_I_O)         0.713     0.713 r                       example_ibuf/O
+                         net (fo=1, routed)           0.865     1.578                         clk_ibufg
+    BUFGCTRL_X0Y16       BUFGCTRL (Prop_bufgctrl_I0_O)
+                                                      0.029     1.607 r                       example_bufg/O
+                         net (fo=579, routed)         0.823     2.430                         <hidden>
+    SLICE_X29Y21         FDRE                                         r  SEM_CONTROLLER       <hidden>
+
+Slack:                    inf
+  Source:                 example_cfg/example_frame_ecc/SYNDROME[0]
+                            (internal pin)
+  Destination:            <hidden>
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@62.500ns period=125.000ns})
+  Path Group:             (none)
+  Path Type:              Hold (Min at Fast Process Corner)
+  Data Path Delay:        4.922ns  (logic 0.000ns (0.000%)  route 4.922ns (100.000%))
+  Logic Levels:           0  
+  Clock Uncertainty:      0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+  Timing Exception:       False Path
+
+    Location             Delay type                Incr(ns)  Path(ns)    PBlock               Netlist Resource(s)
+  -------------------------------------------------------------------    ----------------------------------------
+    FRAME_ECC_X0Y0       FRAME_ECCE2                  0.000     0.000 r                       example_cfg/example_frame_ecc/SYNDROME[0]
+                         net (fo=1, routed)           4.922     4.922                         <hidden>
+    SLICE_X29Y22         FDRE                                         r  SEM_CONTROLLER       <hidden>
+  -------------------------------------------------------------------    ----------------------------------------
+
+                         (clock clk rise edge)        0.000     0.000 r                       
+    C17                                               0.000     0.000 r                       clk (IN)
+                         net (fo=0)                   0.000     0.000                         clk
+    C17                  IBUF (Prop_ibuf_I_O)         0.713     0.713 r                       example_ibuf/O
+                         net (fo=1, routed)           0.865     1.578                         clk_ibufg
+    BUFGCTRL_X0Y16       BUFGCTRL (Prop_bufgctrl_I0_O)
+                                                      0.029     1.607 r                       example_bufg/O
+                         net (fo=579, routed)         0.822     2.429                         <hidden>
+    SLICE_X29Y22         FDRE                                         r  SEM_CONTROLLER       <hidden>
+
+Slack:                    inf
+  Source:                 example_cfg/example_frame_ecc/SYNDROME[10]
+                            (internal pin)
+  Destination:            <hidden>
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@62.500ns period=125.000ns})
+  Path Group:             (none)
+  Path Type:              Hold (Min at Fast Process Corner)
+  Data Path Delay:        4.922ns  (logic 0.000ns (0.000%)  route 4.922ns (100.000%))
+  Logic Levels:           0  
+  Clock Uncertainty:      0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+  Timing Exception:       False Path
+
+    Location             Delay type                Incr(ns)  Path(ns)    PBlock               Netlist Resource(s)
+  -------------------------------------------------------------------    ----------------------------------------
+    FRAME_ECC_X0Y0       FRAME_ECCE2                  0.000     0.000 r                       example_cfg/example_frame_ecc/SYNDROME[10]
+                         net (fo=1, routed)           4.922     4.922                         <hidden>
+    SLICE_X29Y23         FDRE                                         r  SEM_CONTROLLER       <hidden>
+  -------------------------------------------------------------------    ----------------------------------------
+
+                         (clock clk rise edge)        0.000     0.000 r                       
+    C17                                               0.000     0.000 r                       clk (IN)
+                         net (fo=0)                   0.000     0.000                         clk
+    C17                  IBUF (Prop_ibuf_I_O)         0.713     0.713 r                       example_ibuf/O
+                         net (fo=1, routed)           0.865     1.578                         clk_ibufg
+    BUFGCTRL_X0Y16       BUFGCTRL (Prop_bufgctrl_I0_O)
+                                                      0.029     1.607 r                       example_bufg/O
+                         net (fo=579, routed)         0.820     2.427                         <hidden>
+    SLICE_X29Y23         FDRE                                         r  SEM_CONTROLLER       <hidden>
+
+Slack:                    inf
+  Source:                 example_cfg/example_frame_ecc/SYNDROME[11]
+                            (internal pin)
+  Destination:            <hidden>
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@62.500ns period=125.000ns})
+  Path Group:             (none)
+  Path Type:              Hold (Min at Fast Process Corner)
+  Data Path Delay:        4.924ns  (logic 0.000ns (0.000%)  route 4.924ns (100.000%))
+  Logic Levels:           0  
+  Clock Uncertainty:      0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+  Timing Exception:       False Path
+
+    Location             Delay type                Incr(ns)  Path(ns)    PBlock               Netlist Resource(s)
+  -------------------------------------------------------------------    ----------------------------------------
+    FRAME_ECC_X0Y0       FRAME_ECCE2                  0.000     0.000 r                       example_cfg/example_frame_ecc/SYNDROME[11]
+                         net (fo=1, routed)           4.924     4.924                         <hidden>
+    SLICE_X29Y23         FDRE                                         r  SEM_CONTROLLER       <hidden>
+  -------------------------------------------------------------------    ----------------------------------------
+
+                         (clock clk rise edge)        0.000     0.000 r                       
+    C17                                               0.000     0.000 r                       clk (IN)
+                         net (fo=0)                   0.000     0.000                         clk
+    C17                  IBUF (Prop_ibuf_I_O)         0.713     0.713 r                       example_ibuf/O
+                         net (fo=1, routed)           0.865     1.578                         clk_ibufg
+    BUFGCTRL_X0Y16       BUFGCTRL (Prop_bufgctrl_I0_O)
+                                                      0.029     1.607 r                       example_bufg/O
+                         net (fo=579, routed)         0.820     2.427                         <hidden>
+    SLICE_X29Y23         FDRE                                         r  SEM_CONTROLLER       <hidden>
+
+Slack:                    inf
+  Source:                 example_cfg/example_frame_ecc/SYNDROME[8]
+                            (internal pin)
+  Destination:            <hidden>
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@62.500ns period=125.000ns})
+  Path Group:             (none)
+  Path Type:              Hold (Min at Fast Process Corner)
+  Data Path Delay:        4.927ns  (logic 0.000ns (0.000%)  route 4.927ns (100.000%))
+  Logic Levels:           0  
+  Clock Uncertainty:      0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+  Timing Exception:       False Path
+
+    Location             Delay type                Incr(ns)  Path(ns)    PBlock               Netlist Resource(s)
+  -------------------------------------------------------------------    ----------------------------------------
+    FRAME_ECC_X0Y0       FRAME_ECCE2                  0.000     0.000 r                       example_cfg/example_frame_ecc/SYNDROME[8]
+                         net (fo=1, routed)           4.927     4.927                         <hidden>
+    SLICE_X28Y21         FDRE                                         r  SEM_CONTROLLER       <hidden>
+  -------------------------------------------------------------------    ----------------------------------------
+
+                         (clock clk rise edge)        0.000     0.000 r                       
+    C17                                               0.000     0.000 r                       clk (IN)
+                         net (fo=0)                   0.000     0.000                         clk
+    C17                  IBUF (Prop_ibuf_I_O)         0.713     0.713 r                       example_ibuf/O
+                         net (fo=1, routed)           0.865     1.578                         clk_ibufg
+    BUFGCTRL_X0Y16       BUFGCTRL (Prop_bufgctrl_I0_O)
+                                                      0.029     1.607 r                       example_bufg/O
+                         net (fo=579, routed)         0.823     2.430                         <hidden>
+    SLICE_X28Y21         FDRE                                         r  SEM_CONTROLLER       <hidden>
+
+Slack:                    inf
+  Source:                 example_cfg/example_frame_ecc/SYNDROME[7]
+                            (internal pin)
+  Destination:            <hidden>
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@62.500ns period=125.000ns})
+  Path Group:             (none)
+  Path Type:              Hold (Min at Fast Process Corner)
+  Data Path Delay:        4.928ns  (logic 0.000ns (0.000%)  route 4.928ns (100.000%))
+  Logic Levels:           0  
+  Clock Uncertainty:      0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+  Timing Exception:       False Path
+
+    Location             Delay type                Incr(ns)  Path(ns)    PBlock               Netlist Resource(s)
+  -------------------------------------------------------------------    ----------------------------------------
+    FRAME_ECC_X0Y0       FRAME_ECCE2                  0.000     0.000 r                       example_cfg/example_frame_ecc/SYNDROME[7]
+                         net (fo=1, routed)           4.928     4.928                         <hidden>
+    SLICE_X28Y22         FDRE                                         r  SEM_CONTROLLER       <hidden>
+  -------------------------------------------------------------------    ----------------------------------------
+
+                         (clock clk rise edge)        0.000     0.000 r                       
+    C17                                               0.000     0.000 r                       clk (IN)
+                         net (fo=0)                   0.000     0.000                         clk
+    C17                  IBUF (Prop_ibuf_I_O)         0.713     0.713 r                       example_ibuf/O
+                         net (fo=1, routed)           0.865     1.578                         clk_ibufg
+    BUFGCTRL_X0Y16       BUFGCTRL (Prop_bufgctrl_I0_O)
+                                                      0.029     1.607 r                       example_bufg/O
+                         net (fo=579, routed)         0.822     2.429                         <hidden>
+    SLICE_X28Y22         FDRE                                         r  SEM_CONTROLLER       <hidden>
+
+Slack:                    inf
+  Source:                 example_cfg/example_frame_ecc/SYNDROME[9]
+                            (internal pin)
+  Destination:            <hidden>
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@62.500ns period=125.000ns})
+  Path Group:             (none)
+  Path Type:              Hold (Min at Fast Process Corner)
+  Data Path Delay:        4.974ns  (logic 0.000ns (0.000%)  route 4.974ns (100.000%))
+  Logic Levels:           0  
+  Clock Uncertainty:      0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+  Timing Exception:       False Path
+
+    Location             Delay type                Incr(ns)  Path(ns)    PBlock               Netlist Resource(s)
+  -------------------------------------------------------------------    ----------------------------------------
+    FRAME_ECC_X0Y0       FRAME_ECCE2                  0.000     0.000 r                       example_cfg/example_frame_ecc/SYNDROME[9]
+                         net (fo=1, routed)           4.974     4.974                         <hidden>
+    SLICE_X28Y23         FDRE                                         r  SEM_CONTROLLER       <hidden>
+  -------------------------------------------------------------------    ----------------------------------------
+
+                         (clock clk rise edge)        0.000     0.000 r                       
+    C17                                               0.000     0.000 r                       clk (IN)
+                         net (fo=0)                   0.000     0.000                         clk
+    C17                  IBUF (Prop_ibuf_I_O)         0.713     0.713 r                       example_ibuf/O
+                         net (fo=1, routed)           0.865     1.578                         clk_ibufg
+    BUFGCTRL_X0Y16       BUFGCTRL (Prop_bufgctrl_I0_O)
+                                                      0.029     1.607 r                       example_bufg/O
+                         net (fo=579, routed)         0.820     2.427                         <hidden>
+    SLICE_X28Y23         FDRE                                         r  SEM_CONTROLLER       <hidden>
+
+Slack:                    inf
+  Source:                 example_cfg/example_frame_ecc/SYNDROME[2]
+                            (internal pin)
+  Destination:            <hidden>
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@62.500ns period=125.000ns})
+  Path Group:             (none)
+  Path Type:              Hold (Min at Fast Process Corner)
+  Data Path Delay:        4.981ns  (logic 0.000ns (0.000%)  route 4.981ns (100.000%))
+  Logic Levels:           0  
+  Clock Uncertainty:      0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+  Timing Exception:       False Path
+
+    Location             Delay type                Incr(ns)  Path(ns)    PBlock               Netlist Resource(s)
+  -------------------------------------------------------------------    ----------------------------------------
+    FRAME_ECC_X0Y0       FRAME_ECCE2                  0.000     0.000 r                       example_cfg/example_frame_ecc/SYNDROME[2]
+                         net (fo=1, routed)           4.981     4.981                         <hidden>
+    SLICE_X29Y23         FDRE                                         r  SEM_CONTROLLER       <hidden>
+  -------------------------------------------------------------------    ----------------------------------------
+
+                         (clock clk rise edge)        0.000     0.000 r                       
+    C17                                               0.000     0.000 r                       clk (IN)
+                         net (fo=0)                   0.000     0.000                         clk
+    C17                  IBUF (Prop_ibuf_I_O)         0.713     0.713 r                       example_ibuf/O
+                         net (fo=1, routed)           0.865     1.578                         clk_ibufg
+    BUFGCTRL_X0Y16       BUFGCTRL (Prop_bufgctrl_I0_O)
+                                                      0.029     1.607 r                       example_bufg/O
+                         net (fo=579, routed)         0.820     2.427                         <hidden>
+    SLICE_X29Y23         FDRE                                         r  SEM_CONTROLLER       <hidden>
+
+Slack:                    inf
+  Source:                 example_cfg/example_frame_ecc/SYNDROME[3]
+                            (internal pin)
+  Destination:            <hidden>
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@62.500ns period=125.000ns})
+  Path Group:             (none)
+  Path Type:              Hold (Min at Fast Process Corner)
+  Data Path Delay:        4.983ns  (logic 0.000ns (0.000%)  route 4.983ns (100.000%))
+  Logic Levels:           0  
+  Clock Uncertainty:      0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+  Timing Exception:       False Path
+
+    Location             Delay type                Incr(ns)  Path(ns)    PBlock               Netlist Resource(s)
+  -------------------------------------------------------------------    ----------------------------------------
+    FRAME_ECC_X0Y0       FRAME_ECCE2                  0.000     0.000 r                       example_cfg/example_frame_ecc/SYNDROME[3]
+                         net (fo=1, routed)           4.983     4.983                         <hidden>
+    SLICE_X28Y23         FDRE                                         r  SEM_CONTROLLER       <hidden>
+  -------------------------------------------------------------------    ----------------------------------------
+
+                         (clock clk rise edge)        0.000     0.000 r                       
+    C17                                               0.000     0.000 r                       clk (IN)
+                         net (fo=0)                   0.000     0.000                         clk
+    C17                  IBUF (Prop_ibuf_I_O)         0.713     0.713 r                       example_ibuf/O
+                         net (fo=1, routed)           0.865     1.578                         clk_ibufg
+    BUFGCTRL_X0Y16       BUFGCTRL (Prop_bufgctrl_I0_O)
+                                                      0.029     1.607 r                       example_bufg/O
+                         net (fo=579, routed)         0.820     2.427                         <hidden>
+    SLICE_X28Y23         FDRE                                         r  SEM_CONTROLLER       <hidden>
+
+Slack:                    inf
+  Source:                 example_cfg/example_frame_ecc/SYNDROMEVALID
+                            (internal pin)
+  Destination:            <hidden>
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@62.500ns period=125.000ns})
+  Path Group:             (none)
+  Path Type:              Hold (Min at Fast Process Corner)
+  Data Path Delay:        4.987ns  (logic 0.000ns (0.000%)  route 4.987ns (100.000%))
+  Logic Levels:           0  
+  Clock Uncertainty:      0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+  Timing Exception:       False Path
+
+    Location             Delay type                Incr(ns)  Path(ns)    PBlock               Netlist Resource(s)
+  -------------------------------------------------------------------    ----------------------------------------
+    FRAME_ECC_X0Y0       FRAME_ECCE2                  0.000     0.000 r                       example_cfg/example_frame_ecc/SYNDROMEVALID
+                         net (fo=54, routed)          4.987     4.987                         <hidden>
+    SLICE_X30Y20         FDRE                                         r  SEM_CONTROLLER       <hidden>
+  -------------------------------------------------------------------    ----------------------------------------
+
+                         (clock clk rise edge)        0.000     0.000 r                       
+    C17                                               0.000     0.000 r                       clk (IN)
+                         net (fo=0)                   0.000     0.000                         clk
+    C17                  IBUF (Prop_ibuf_I_O)         0.713     0.713 r                       example_ibuf/O
+                         net (fo=1, routed)           0.865     1.578                         clk_ibufg
+    BUFGCTRL_X0Y16       BUFGCTRL (Prop_bufgctrl_I0_O)
+                                                      0.029     1.607 r                       example_bufg/O
+                         net (fo=579, routed)         0.823     2.430                         <hidden>
+    SLICE_X30Y20         FDRE                                         r  SEM_CONTROLLER       <hidden>
+
+
+
+
+

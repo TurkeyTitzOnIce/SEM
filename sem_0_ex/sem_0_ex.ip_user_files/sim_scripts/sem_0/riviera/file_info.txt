@@ -1,0 +1,3 @@
+sem_v4_1_vl_rfs.v,verilog,sem_v4_1_16,../../../ipstatic/hdl/sem_v4_1_vl_rfs.v,incdir="../../../../../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef"
+sem_0.v,verilog,xil_defaultlib,../../../../sem_0_ex.gen/sources_1/ip/sem_0/sim/sem_0.v,incdir="../../../../../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef"
+glbl.v,Verilog,xil_defaultlib,glbl.v
