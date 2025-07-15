@@ -52,9 +52,10 @@ architecture Behavioral of top is
     signal icap_csib    : std_logic;
     signal icap_rdwrb   : std_logic;
     signal icap_i       : std_logic_vector(31 downto 0);
+    signal icap_clk     : std_logic;
+
     signal icap_request : std_logic;
     signal icap_grant   : std_logic := '1';
-    signal icap_clk     : std_logic;
 
     ----------------------------------------------------------------
     -- UART Transmission Logic
@@ -71,12 +72,25 @@ architecture Behavioral of top is
     signal tx_start         : std_logic := '0';
     signal tx_bit_cnt       : integer range 0 to 9 := 0;
     signal tx_shift_reg     : std_logic_vector(9 downto 0);
-    
+
     ----------------------------------------------------------------
     -- Button Debounce
     ----------------------------------------------------------------
     signal btn_sync     : std_logic_vector(2 downto 0) := (others => '0');
     signal btn_pressed  : std_logic := '0';
+
+    ----------------------------------------------------------------
+    -- ICAPE2 Component Declaration
+    ----------------------------------------------------------------
+    component ICAPE2
+        port (
+            CLK   : in  std_logic;
+            CSB   : in  std_logic;
+            RDWRB : in  std_logic;
+            I     : in  std_logic_vector(31 downto 0);
+            O     : out std_logic_vector(31 downto 0)
+        );
+    end component;
 
 begin
 
@@ -144,6 +158,19 @@ begin
         );
 
     ----------------------------------------------------------------
+    -- ICAP Primitive Instance
+    ----------------------------------------------------------------
+    icap_inst : ICAPE2
+    port map (
+        CLK   => icap_clk,
+        CSIB  => icap_csib,     -- <--- CHANGE CSB to CSIB here
+        RDWRB => icap_rdwrb,
+        I     => icap_i,
+        O     => icap_o
+    );
+
+
+    ----------------------------------------------------------------
     -- Generate UART Clock Enable
     ----------------------------------------------------------------
     process(clk)
@@ -166,7 +193,7 @@ begin
     begin
         if rising_edge(clk) then
             if tx_start = '1' and tx_busy = '0' then
-                tx_shift_reg <= '1' & tx_byte & '0'; -- stop + data + start
+                tx_shift_reg <= '1' & tx_byte & '0'; -- stop + data + start bits
                 tx_bit_cnt <= 0;
                 tx_busy <= '1';
             elsif uart_clk_en = '1' and tx_busy = '1' then
@@ -204,6 +231,9 @@ begin
         end if;
     end process;
 
+    ----------------------------------------------------------------
+    -- LEDs for SEM Status
+    ----------------------------------------------------------------
     led(0) <= status_heartbeat;
     led(1) <= status_initialization;
     led(2) <= status_observation;
@@ -212,6 +242,5 @@ begin
     led(5) <= status_injection;
     led(6) <= status_essential;
     led(7) <= status_uncorrectable;
-
 
 end Behavioral;
